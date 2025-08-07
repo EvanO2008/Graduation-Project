@@ -4272,6 +4272,127 @@ const charities = [
     website: "https://www.americantelemed.org/"
   },
   {
+    name: "Per Scholas",
+    description: "Offers free, rigorous IT job training to individuals in underserved communities, helping them launch successful careers in technology.",
+    image: "https://perscholas.org/wp-content/themes/perscholas/assets/images/logo.png",
+    website: "https://www.perscholas.org/"
+  },
+  {
+    name: "All Star Code",
+    description: "Prepares young men of color for careers in tech by providing mentorship, industry exposure, and intensive coding training.",
+    image: "https://allstarcode.org/wp-content/uploads/2021/05/logo.png",
+    website: "https://allstarcode.org/"
+  },
+  {
+    name: "Digital NEST",
+    description: "Provides youth in underserved rural communities with access to technology, mentorship, and skills to pursue tech careers.",
+    image: "https://digitalnest.org/wp-content/uploads/2020/10/digital-nest-logo.svg",
+    website: "https://digitalnest.org/"
+  },
+  {
+    name: "Resilient Coders",
+    description: "Teaches young people from underserved communities how to code and supports them into high-growth tech jobs.",
+    image: "https://resilientcoders.org/images/logo-black.png",
+    website: "https://resilientcoders.org/"
+  },
+  {
+    name: "CareerFoundry Scholarships",
+    description: "Provides scholarships and bootcamp programs to help diverse and low-income students transition into tech careers.",
+    image: "https://careerfoundry.com/assets/logos/logo-black.svg",
+    website: "https://careerfoundry.com/"
+  },
+  {
+    name: "StackUp",
+    description: "Supports veterans and active duty military through gaming-based mental health programs and tech industry exposure.",
+    image: "https://stackup.org/wp-content/uploads/2020/11/stack-up-logo-red.png",
+    website: "https://stackup.org/"
+  },
+  {
+    name: "OpenDoors Academy",
+    description: "Supports middle and high school students in under-resourced communities through education and career readiness programs, including tech skills.",
+    image: "https://www.opendoorsacademy.org/wp-content/uploads/2020/10/ODA-Logo.png",
+    website: "https://www.opendoorsacademy.org/"
+  },
+  {
+    name: "Internet Society Foundation",
+    description: "Funds programs that expand internet access and digital education to underserved and rural communities.",
+    image: "https://www.isocfoundation.org/wp-content/uploads/2020/03/ISOC-Foundation-Logo-1.svg",
+    website: "https://www.isocfoundation.org/"
+  },
+  {
+    name: "NextGen America",
+    description: "Empowers young people through civic engagement and access to education, including digital literacy and tech equity initiatives.",
+    image: "https://nextgenamerica.org/wp-content/themes/nextgen/assets/images/logo.svg",
+    website: "https://nextgenamerica.org/"
+  },
+  {
+    name: "The Tech Interactive",
+    description: "A science and technology center offering hands-on education, innovation programs, and outreach for students from underrepresented communities.",
+    image: "https://www.thetech.org/sites/default/files/logo.png",
+    website: "https://www.thetech.org/"
+  },
+  {
+    name: "LAUNCH Code",
+    description: "Offers free coding education and job placement services to help adults from nontraditional backgrounds start careers in tech.",
+    image: "https://www.launchcode.org/static/media/logo.1cc84556.svg",
+    website: "https://www.launchcode.org/"
+  },
+  {
+    name: "Bay Area Video Coalition (BAVC)",
+    description: "Provides low-cost media and tech training, job support, and apprenticeships to help underserved communities thrive in digital industries.",
+    image: "https://bavc.org/wp-content/uploads/2023/01/bavc-logo.png",
+    website: "https://bavc.org/"
+  },
+  {
+    name: "Health Career Connection",
+    description: "Expands diversity in health professions by offering paid internships and career development for college students in underrepresented communities.",
+    image: "https://healthcareers.org/wp-content/uploads/2020/10/HCC_logo_color.png",
+    website: "https://healthcareers.org/"
+  },
+  {
+    name: "Health Leads",
+    description: "Connects low-income patients with essential resources like food, housing, and transportation to improve overall health outcomes.",
+    image: "https://healthleadsusa.org/wp-content/uploads/2022/06/Health-Leads-Logo.png",
+    website: "https://healthleadsusa.org/"
+  },
+  {
+    name: "National Health Foundation",
+    description: "Improves community health by addressing social determinants like education, nutrition, and housing for underserved populations.",
+    image: "https://nationalhealthfoundation.org/wp-content/uploads/2020/01/nhf-logo.svg",
+    website: "https://nationalhealthfoundation.org/"
+  },
+  {
+    name: "Techbridge Girls",
+    description: "Provides STEM education and mentorship to girls from low-income communities to empower their academic and career growth.",
+    image: "https://www.techbridgegirls.org/uploads/1/2/1/3/121346119/tbg-logo_orig.png",
+    website: "https://www.techbridgegirls.org/"
+  },
+  {
+    name: "DevMission",
+    description: "Trains young adults from underserved communities in San Francisco for careers in tech through hands-on learning and job placement.",
+    image: "https://www.devmission.org/uploads/1/0/2/3/102389226/devmissionlogo_orig.png",
+    website: "https://www.devmission.org/"
+  },
+  {
+    name: "MedHaul",
+    description: "A mission-driven tech platform that improves access to transportation for underserved patients needing non-emergency medical care.",
+    image: "https://www.medhaul.com/wp-content/uploads/2021/06/medhaul-logo.png",
+    website: "https://www.medhaul.com/"
+  },
+  {
+    name: "Cyversity",
+    description: "Promotes diversity in cybersecurity by offering training, mentorship, and scholarships for underrepresented populations.",
+    image: "https://www.cyversity.org/wp-content/uploads/2020/12/cyversity-logo.png",
+    website: "https://www.cyversity.org/"
+  },
+  {
+    name: "Built By Girls",
+    description: "Prepares the next generation of female and nonbinary leaders in tech through mentorship and career-readiness programs.",
+    image: "https://www.builtbygirls.com/images/logos/builtbygirls.svg",
+    website: "https://www.builtbygirls.com/"
+  },
+
+  {
     "name": "",
     "description": "",
     "website": "",
