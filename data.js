@@ -233,5 +233,31 @@ const charities = [
 	image: "https://givewell.org/assets/logo.png",
 	website: "https://givewell.org/fund/maximum-impact"
 }
+
+	  {
+    name: "Charity Name",
+    description: "Short description of the charity.",
+    website: "https://www.example.org/",
+    image: "https://www.example.org/image.jpg"
+  },
+  {
+    name: "Another Charity",
+    description: "Another charity description.",
+    website: "https://www.another.org/",
+    image: "https://www.another.org/image.jpg"
+  }
+
+  {
+    name: "Charity Name",
+    description: "Short description of the charity.",
+    website: "https://www.example.org/",
+    image: "https://www.example.org/image.jpg"
+  },
+  {
+    name: "Another Charity",
+    description: "Another charity description.",
+    website: "https://www.another.org/",
+    image: "https://www.another.org/image.jpg"
+  }
 	
 ];
