@@ -263,21 +263,6 @@ const charities = [
 	image: "https://givedirectly.org/wp-content/uploads/2020/11/logo.svg",
 	website: "https://givedirectly.org/"
 },
-
-
-	  {
-    name: "Charity Name",
-    description: "Short description of the charity.",
-    website: "https://www.example.org/",
-    image: "https://www.example.org/image.jpg"
-  },
-  {
-    name: "Another Charity",
-    description: "Another charity description.",
-    website: "https://www.another.org/",
-    image: "https://www.another.org/image.jpg"
-  }
-
   {
     name: "Charity Name",
     description: "Short description of the charity.",
@@ -289,6 +274,18 @@ const charities = [
     description: "Another charity description.",
     website: "https://www.another.org/",
     image: "https://www.another.org/image.jpg"
+  },
+  {
+    name: "Charity Name",
+    description: "Short description of the charity.",
+    website: "https://www.example.org/",
+    image: "https://www.example.org/image.jpg"
+  },
+  {
+    name: "Another Charity",
+    description: "Another charity description.",
+    website: "https://www.another.org/",
+    image: "https://www.another.org/image.jpg"
   }
-	
 ];
+
