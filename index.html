@@ -270,39 +270,16 @@
       });
     }
 
+    // Deduplicate full dataset first
     const uniqueCharities = removeExactDuplicates(charities);
 
-    async function getRelatedWords(query) {
-      try {
-        const res = await fetch(`https://api.datamuse.com/words?ml=${encodeURIComponent(query)}`);
-        const data = await res.json();
-        return data.slice(0, 5).map(w => w.word.toLowerCase());
-      } catch (err) {
-        console.error("Datamuse API error:", err);
-        return [];
-      }
-    }
-
-    async function filterCharities() {
-      const query = searchInput.value.trim().toLowerCase();
-      let relatedWords = [];
-
-      if (query) {
-        relatedWords = await getRelatedWords(query);
-      }
-
-      const allQueries = [query, ...relatedWords];
-
-      filteredCharities = uniqueCharities.filter(charity => {
-        const name = charity.name.toLowerCase();
-        const description = charity.description.toLowerCase();
-        const keywordStr = (charity.keywords || []).join(' ').toLowerCase();
-
-        return allQueries.some(q =>
-          name.includes(q) || description.includes(q) || keywordStr.includes(q)
-        );
-      });
-
+    function filterCharities() {
+      const query = searchInput.value.toLowerCase();
+      filteredCharities = uniqueCharities.filter(charity =>
+        charity.name.toLowerCase().includes(query) ||
+        charity.description.toLowerCase().includes(query) ||
+        (charity.keywords && charity.keywords.join(' ').toLowerCase().includes(query))
+      );
       charityList.innerHTML = '';
       currentIndex = 0;
       displayCharitiesBatch();
@@ -323,10 +300,7 @@
     filteredCharities = uniqueCharities;
     displayCharitiesBatch();
 
-    searchInput.addEventListener('input', () => {
-      filterCharities();
-    });
-
+    searchInput.addEventListener('input', filterCharities);
     window.addEventListener('scroll', onScroll);
 
     function toggleMenu() {
