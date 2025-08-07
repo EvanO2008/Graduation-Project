@@ -16,60 +16,6 @@
       min-height: 100vh;
     }
 
-    nav {
-      background: #1d4ed8;
-      padding: 16px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      position: relative;
-      padding-bottom: 4px;
-      transition: color 0.3s ease;
-    }
-
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #ffffff;
-      left: 0;
-      bottom: 0;
-      transition: width 0.3s ease;
-    }
-
-    nav a:hover::after,
-    nav a.active::after {
-      width: 100%;
-    }
-
-    nav a:hover {
-      color: #c7d2fe;
-    }
-
-    .menu-button {
-      display: none;
-      color: #fff;
-      background-color: #1d4ed8;
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
     .container {
       max-width: 1000px;
       margin: 40px auto;
@@ -93,35 +39,6 @@
     }
 
     @media (max-width: 600px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        gap: 12px;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 250px;
-        height: 100%;
-        background-color: #1d4ed8;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: left 0.3s ease-in-out;
-      }
-
-      nav.active {
-        left: 0;
-      }
-
-      nav a {
-        text-align: center;
-        padding: 16px;
-        font-size: 1.2rem;
-        color: white;
-      }
-
-      .menu-button {
-        display: block;
-      }
-
       .container {
         padding: 20px;
       }
@@ -133,32 +50,11 @@
   </style>
 </head>
 <body>
-  <button class="menu-button" id="menuButton">Charity Search</button>
-  <nav id="mobileNav">
-    <span class="close-btn" id="closeBtn">&times;</span>
-    <a href="index.html">Search</a>
-    <a href="about.html" class="active">About Us</a>
-    <a href="donate.html">Donate</a>
-    <a href="other.html">Other</a>
-  </nav>
 
   <div class="container">
     <h1>About Us</h1>
     <p>We are a non-profit organization dedicated to connecting individuals with charitable causes and organizations. Your support helps us make a positive impact worldwide.</p>
   </div>
 
-  <script>
-    const menuButton = document.getElementById('menuButton');
-    const mobileNav = document.getElementById('mobileNav');
-    const closeBtn = document.getElementById('closeBtn');
-
-    menuButton.addEventListener('click', () => {
-      mobileNav.classList.add('active');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-    });
-  </script>
 </body>
 </html>
