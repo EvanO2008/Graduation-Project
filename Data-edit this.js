@@ -34,241 +34,241 @@ const charities = [
     description: "Helping communities fight hunger and poverty through sustainable agriculture and livestock.",
     image: "data:image/png;base64,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",
     website: "https://www.heifer.org/"
-  },
-  {
-    name: "Charity: Water",
-    description: "Bringing clean and safe drinking water to people in developing countries.",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIORVrYC3JP3PKCjjrAWfTdi_r14KbjH0trQ&s",
-    website: "https://www.charitywater.org/"
-  },
-  {
-	name: "Feeding America",
-	description: "Feeding America is a nationwide network of food banks that feeds millions of people through food pantries and meal programs.",
-	image: "https://www.feedingamerica.org/sites/default/files/styles/open_graph_image/public/2019-05/FA-FB-Share.png",
-	website: "https://www.feedingamerica.org/"
- },
-{
-	name: "Rainforest Alliance",
-	description: "Fighting deforestation and climate change through sustainable practices.",
-	image: "https://www.rainforest-alliance.org/wp-content/themes/rainforest/img/RA_Seal_Standard_Logo.svg",
-	website: "https://www.rainforest-alliance.org/"
 },
 {
-	name: "Team Rubicon",
-	description: "Disaster response organization that utilizes the skills of military veterans to respond to emergencies.",
-	image: "https://teamrubiconusa.org/wp-content/uploads/2020/06/TR_Logo_LightRed.png",
-	website: "https://teamrubiconusa.org/"
+  name: "Charity: Water",
+  description: "Charity: Water is a nonprofit organization that brings clean and safe drinking water to people in developing countries. By funding community-owned water projects and using innovative technology for transparency, the organization empowers rural communities to gain access to one of life’s most basic needs — clean water — transforming health, education, and economic outcomes for generations.",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIORVrYC3JP3PKCjjrAWfTdi_r14KbjH0trQ&s",
+  website: "https://www.charitywater.org/"
 },
 {
-	name: "UNICEF",
-	description: "Helping children around the world survive and thrive.",
-	image: "https://www.unicef.org/themes/custom/unicef/assets/images/unicef-logo.png",
-	website: "https://www.unicef.org/"
+  name: "Feeding America",
+  description: "Feeding America is the largest hunger-relief organization in the United States, operating a vast network of food banks, pantries, and meal programs across the country. Their mission is to eliminate hunger through the equitable distribution of nutritious food, advocacy for policy change, and support for underserved communities, helping millions of individuals and families every year.",
+  image: "https://www.feedingamerica.org/sites/default/files/styles/open_graph_image/public/2019-05/FA-FB-Share.png",
+  website: "https://www.feedingamerica.org/"
 },
 {
-	name: "International Rescue Committee",
-	description: "Helping people whose lives are shattered by conflict and disaster to survive, recover and gain control of their future.",
-	image: "https://www.rescue.org/sites/default/files/styles/irc_logo/public/irc-logo.png",
-	website: "https://www.rescue.org/"
+  name: "Rainforest Alliance",
+  description: "The Rainforest Alliance works to conserve biodiversity and ensure sustainable livelihoods by transforming land-use practices, business models, and consumer behavior. Partnering with farmers, forest communities, companies, and consumers, the organization promotes environmental stewardship, fights climate change, and protects rainforests through rigorous certification programs and grassroots support.",
+  image: "https://www.rainforest-alliance.org/wp-content/themes/rainforest/img/RA_Seal_Standard_Logo.svg",
+  website: "https://www.rainforest-alliance.org/"
 },
 {
-	name: "GlobalGiving",
-	description: "Connecting donors with grassroots projects around the world to make a high-impact change.",
-	image: "https://www.globalgiving.org/img/logo/globalgiving-logo.png",
-	website: "https://www.globalgiving.org/"
+  name: "Team Rubicon",
+  description: "Team Rubicon is a disaster response nonprofit that mobilizes military veterans and first responders to provide immediate relief to communities affected by natural disasters and humanitarian crises. By combining the skills and experiences of veterans with civilian volunteers, the organization delivers efficient and impactful services including debris removal, emergency medical aid, and logistical coordination.",
+  image: "https://teamrubiconusa.org/wp-content/uploads/2020/06/TR_Logo_LightRed.png",
+  website: "https://teamrubiconusa.org/"
 },
 {
-	name: "One Acre Fund",
-	description: "Helping smallholder farmers in Africa grow their way out of hunger and build lasting prosperity.",
-	image: "https://oneacrefund.org/themes/custom/oaf/logo.svg",
-	website: "https://oneacrefund.org/"
+  name: "UNICEF",
+  description: "The United Nations Children's Fund (UNICEF) works in over 190 countries and territories to protect the rights and well-being of every child. From providing life-saving vaccines and emergency aid to supporting education and gender equality, UNICEF helps children survive and thrive, especially in the most vulnerable and crisis-affected regions of the world.",
+  image: "https://www.unicef.org/themes/custom/unicef/assets/images/unicef-logo.png",
+  website: "https://www.unicef.org/"
 },
 {
-	name: "Oxfam International",
-	description: "A global movement of people working together to end the injustice of poverty.",
-	image: "https://www.oxfam.org/themes/custom/oxfam/logo.svg",
-	website: "https://www.oxfam.org/"
+  name: "International Rescue Committee",
+  description: "The International Rescue Committee (IRC) responds to the world’s worst humanitarian crises by providing emergency aid, clean water, healthcare, education, and support for displaced individuals. Operating in over 40 countries and 20 U.S. cities, the IRC helps people survive, rebuild their lives, and regain control over their futures after conflict or disaster.",
+  image: "https://www.rescue.org/sites/default/files/styles/irc_logo/public/irc-logo.png",
+  website: "https://www.rescue.org/"
 },
 {
-	name: "Amnesty International",
-	description: "Campaigning for human rights and fighting injustice worldwide.",
-	image: "https://www.amnesty.org/en/wp-content/themes/amnesty/images/amnesty-logo.png",
-	website: "https://www.amnesty.org/"
+  name: "GlobalGiving",
+  description: "GlobalGiving is a global crowdfunding platform that connects donors with vetted grassroots projects in communities around the world. By empowering local nonprofits and social entrepreneurs, GlobalGiving helps channel resources to high-impact solutions in areas such as education, disaster relief, climate change, and women's empowerment.",
+  image: "https://www.globalgiving.org/img/logo/globalgiving-logo.png",
+  website: "https://www.globalgiving.org/"
 },
 {
-	name: "The Nature Conservancy",
-	description: "Conserving the lands and waters on which all life depends.",
-	image: "https://www.nature.org/etc/clientlibs/tnc/clientlibs_base/resources/images/tnc-logo-green.svg",
-	website: "https://www.nature.org/"
+  name: "One Acre Fund",
+  description: "One Acre Fund supports smallholder farmers in Sub-Saharan Africa by providing them with seeds, tools, financing, and training to grow more productive and profitable farms. With a mission to end hunger and poverty through agricultural development, the organization works directly with families to help them achieve food security and long-term prosperity.",
+  image: "https://oneacrefund.org/themes/custom/oaf/logo.svg",
+  website: "https://oneacrefund.org/"
 },
 {
-	name: "Direct Relief",
-	description: "Providing medical assistance to improve the health and lives of people affected by poverty and emergencies.",
-	image: "https://www.directrelief.org/wp-content/uploads/direct-relief-logo.png",
-	website: "https://www.directrelief.org/"
+  name: "Oxfam International",
+  description: "Oxfam International is a confederation of 21 independent charitable organizations focused on alleviating global poverty and inequality. Through humanitarian assistance, development programs, and policy advocacy, Oxfam addresses the root causes of injustice and works to empower marginalized communities, especially women and girls, to achieve self-reliance.",
+  image: "https://www.oxfam.org/themes/custom/oxfam/logo.svg",
+  website: "https://www.oxfam.org/"
 },
 {
-	name: "Room to Read",
-	description: "Creating a world free from illiteracy and gender inequality.",
-	image: "https://www.roomtoread.org/media/2405/logo-horizontal.svg",
-	website: "https://www.roomtoread.org/"
+  name: "Amnesty International",
+  description: "Amnesty International is a global movement of over 10 million people working to protect human rights and fight injustice. The organization investigates and exposes abuses, lobbies governments for policy changes, and supports victims of oppression through legal aid and advocacy, promoting justice, freedom, and dignity for all.",
+  image: "https://www.amnesty.org/en/wp-content/themes/amnesty/images/amnesty-logo.png",
+  website: "https://www.amnesty.org/"
 },
 {
-	name: "Water.org",
-	description: "Bringing water and sanitation to the world through access to affordable financing.",
-	image: "https://water.org/assets/logo-waterorg-blue.png",
-	website: "https://water.org/"
+  name: "The Nature Conservancy",
+  description: "The Nature Conservancy is a global environmental organization working to conserve the lands and waters on which all life depends. Through science-based strategies, collaborative partnerships, and on-the-ground conservation efforts, the organization addresses critical challenges like climate change, land degradation, biodiversity loss, and freshwater scarcity, protecting ecosystems for future generations.",
+  image: "https://www.nature.org/etc/clientlibs/tnc/clientlibs_base/resources/images/tnc-logo-green.svg",
+  website: "https://www.nature.org/"
 },
 {
-	name: "CARE",
-	description: "Fighting global poverty and providing disaster relief, with a special focus on women and girls.",
-	image: "https://www.care.org/wp-content/uploads/2020/05/care-logo.png",
-	website: "https://www.care.org/"
+  name: "Direct Relief",
+  description: "Direct Relief is a humanitarian aid organization focused on improving the health and lives of people affected by poverty and emergencies. It delivers life-saving medical resources—including essential medicines, equipment, and vaccines—to hospitals and clinics in over 80 countries, as well as underserved areas in the U.S., responding rapidly to crises like natural disasters and health epidemics.",
+  image: "https://www.directrelief.org/wp-content/uploads/direct-relief-logo.png",
+  website: "https://www.directrelief.org/"
 },
 {
-	name: "World Central Kitchen",
-	description: "Providing meals in response to humanitarian, climate, and community crises.",
-	image: "https://wck.org/wp-content/uploads/2022/02/WCK_PrimaryLogo_FullColor_RGB-1-768x392.png",
-	website: "https://wck.org/"
+  name: "Room to Read",
+  description: "Room to Read is a nonprofit dedicated to creating a world free from illiteracy and gender inequality. It focuses on improving literacy outcomes for children in low-income countries and empowering girls to complete secondary school through life skills education and mentorship, equipping them to pursue higher education and economic independence.",
+  image: "https://www.roomtoread.org/media/2405/logo-horizontal.svg",
+  website: "https://www.roomtoread.org/"
 },
 {
-	name: "Project HOPE",
-	description: "Delivering essential medicines and health programs around the world.",
-	image: "https://www.projecthope.org/wp-content/uploads/2022/01/PH_Logo_Blue.png",
-	website: "https://www.projecthope.org/"
+  name: "Water.org",
+  description: "Water.org is an innovative nonprofit that expands access to safe water and sanitation through affordable financing solutions. By empowering families with small, repayable loans, the organization enables people in developing countries to invest in their own water and sanitation infrastructure, improving health, education, and economic opportunities long-term.",
+  image: "https://water.org/assets/logo-waterorg-blue.png",
+  website: "https://water.org/"
 },
 {
-	name: "Trees for the Future",
-	description: "Empowering farmers to restore degraded land through agroforestry.",
-	image: "https://trees.org/wp-content/uploads/2018/06/TREES-logo-green.png",
-	website: "https://trees.org/"
+  name: "CARE",
+  description: "CARE is an international humanitarian organization fighting global poverty and delivering emergency relief, with a strong emphasis on women and girls. Operating in over 100 countries, CARE implements development programs that focus on food security, health, education, climate resilience, and social justice, helping vulnerable communities achieve sustainable progress.",
+  image: "https://www.care.org/wp-content/uploads/2020/05/care-logo.png",
+  website: "https://www.care.org/"
 },
 {
-	name: "Against Malaria Foundation",
-	description: "Protecting people from malaria by distributing insecticide-treated mosquito nets.",
-	image: "https://www.againstmalaria.com/images/amf-logo-square.png",
-	website: "https://www.againstmalaria.com/"
+  name: "World Central Kitchen",
+  description: "Founded by Chef José Andrés, World Central Kitchen provides fresh, nutritious meals to communities impacted by natural disasters, conflict, and other crises. With a belief that food is a universal human right, WCK responds quickly to emergencies around the world, feeding people in need while supporting local food systems and economies.",
+  image: "https://wck.org/wp-content/uploads/2022/02/WCK_PrimaryLogo_FullColor_RGB-1-768x392.png",
+  website: "https://wck.org/"
 },
 {
-	name: "Girls Who Code",
-	description: "Closing the gender gap in technology by teaching girls computer science skills.",
-	image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
-	website: "https://girlswhocode.com/"
+  name: "Project HOPE",
+  description: "Project HOPE is a global health and humanitarian organization that provides essential medicines, medical training, and health care support to underserved communities. Active in over 25 countries, Project HOPE strengthens health systems and responds to global emergencies, such as pandemics and natural disasters, improving access to quality care for vulnerable populations.",
+  image: "https://www.projecthope.org/wp-content/uploads/2022/01/PH_Logo_Blue.png",
+  website: "https://www.projecthope.org/"
 },
 {
-	name: "Cool Earth",
-	description: "Backing people to protect rainforests and fight the climate crisis.",
-	image: "https://www.coolearth.org/wp-content/themes/coolearth/dist/images/logo.svg",
-	website: "https://www.coolearth.org/"
+  name: "Trees for the Future",
+  description: "Trees for the Future empowers small-scale farmers in Africa to regenerate their land using agroforestry techniques. Through its Forest Garden Approach, the organization helps farming families increase food production, build income, and restore biodiversity, creating sustainable livelihoods while combating climate change and environmental degradation.",
+  image: "https://trees.org/wp-content/uploads/2018/06/TREES-logo-green.png",
+  website: "https://trees.org/"
 },
 {
-	name: "The Trevor Project",
-	description: "Providing crisis intervention and suicide prevention services to LGBTQ youth.",
-	image: "https://www.thetrevorproject.org/wp-content/uploads/2021/04/TrevorProject_LogoPrimary-01.svg",
-	website: "https://www.thetrevorproject.org/"
+  name: "Against Malaria Foundation",
+  description: "The Against Malaria Foundation (AMF) is a top-rated nonprofit dedicated to preventing malaria by funding the distribution of long-lasting insecticide-treated bed nets. With a rigorous approach to transparency and impact evaluation, AMF ensures donations protect those most at risk—particularly children in sub-Saharan Africa—from one of the world's deadliest diseases.",
+  image: "https://www.againstmalaria.com/images/amf-logo-square.png",
+  website: "https://www.againstmalaria.com/"
 },
 {
-	name: "Pencils of Promise",
-	description: "Building schools and increasing educational opportunities in the developing world.",
-	image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
-	website: "https://pencilsofpromise.org/"
+  name: "Girls Who Code",
+  description: "Girls Who Code is a nonprofit organization working to close the gender gap in technology by teaching girls and young women computer science and leadership skills. Through free after-school clubs, summer programs, and college and career readiness initiatives, it empowers a new generation of women to pursue careers in tech and challenge industry inequality.",
+  image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
+  website: "https://girlswhocode.com/"
 },
 {
-	name: "Médecins Sans Frontières",
-	description: "Providing independent emergency medical aid in conflict zones and areas affected by endemic disease.",
-	image: "https://www.msf.org/themes/custom/msf/logo.svg",
-	website: "https://www.msf.org/"
+  name: "Cool Earth",
+  description: "Cool Earth is an environmental charity that partners with Indigenous communities to protect rainforests and fight the climate crisis at its root. By supporting local people—who are the best custodians of the forest—Cool Earth enables sustainable livelihoods and strengthens community resilience while preventing deforestation, conserving biodiversity, and sequestering carbon.",
+  image: "https://www.coolearth.org/wp-content/themes/coolearth/dist/images/logo.svg",
+  website: "https://www.coolearth.org/"
 },
 {
-	name: "ActionAid",
-	description: "Working to combat poverty and injustice worldwide through community‑driven campaigns.",
-	image: "https://www.actionaid.org/sites/all/themes/actionaid/logo.svg",
-	website: "https://www.actionaid.org/"
+  name: "The Trevor Project",
+  description: "The Trevor Project is the leading organization providing crisis intervention and suicide prevention services to LGBTQ+ young people under 25. Through its 24/7 lifeline, chat, and text services, as well as advocacy, research, and education initiatives, the organization works to create a safer, more accepting world for LGBTQ+ youth.",
+  image: "https://www.thetrevorproject.org/wp-content/uploads/2021/04/TrevorProject_LogoPrimary-01.svg",
+  website: "https://www.thetrevorproject.org/"
 },
 {
-	name: "OutRight Action International",
-	description: "Advocating for global human rights and protections for LGBTQI people across regions.",
-	image: "https://outrightinternational.org/sites/default/files/logo_0.png",
-	website: "https://outrightinternational.org/"
+  name: "Pencils of Promise",
+  description: "Pencils of Promise is a nonprofit organization that builds schools and increases access to quality education in developing countries. With a focus on community engagement, teacher training, and learning materials, the organization ensures children in underserved areas receive a safe, sustainable, and empowering education to unlock their full potential.",
+  image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
+  website: "https://pencilsofpromise.org/"
 },
 {
-	name: "Hivos",
-	description: "Promoting sustainable development, gender equality, climate justice, and civic rights.",
-	image: "https://hivos.org/wp-content/themes/hivos/assets/img/logo.png",
-	website: "https://hivos.org/"
+  name: "Médecins Sans Frontières",
+  description: "Médecins Sans Frontières (Doctors Without Borders) is a global humanitarian medical organization that delivers emergency aid to people affected by conflict, epidemics, natural disasters, and health system collapse. Providing impartial care regardless of race, religion, or politics, MSF operates in over 70 countries, often in areas with limited access to healthcare.",
+  image: "https://www.msf.org/themes/custom/msf/logo.svg",
+  website: "https://www.msf.org/"
 },
 {
-	name: "ECPAT International",
-	description: "A global network working to end the sexual exploitation of children.",
-	image: "https://ecpat.org/theme/ecpat/images/logo.png",
-	website: "https://ecpat.org/"
+  name: "ActionAid",
+  description: "ActionAid is an international organization that works to advance social justice, gender equality, and poverty eradication. Through rights-based, community-led development, ActionAid supports marginalized groups in over 40 countries to claim their rights to education, food, land, and protection, while also campaigning for global systemic change.",
+  image: "https://www.actionaid.org/sites/all/themes/actionaid/logo.svg",
+  website: "https://www.actionaid.org/"
 },
 {
-	name: "War Child",
-	description: "Supporting children affected by conflict through education, mental health services, and protection.",
-	image: "https://www.warchild.org.uk/sites/default/files/wc_logo.png",
-	website: "https://www.warchild.org/"
+  name: "OutRight Action International",
+  description: "OutRight Action International is a leading human rights organization advocating for the rights of LGBTQI people globally. Through research, policy work, and direct collaboration with grassroots organizations, OutRight fights against discrimination, criminalization, and violence while promoting legal reform, social inclusion, and equality worldwide.",
+  image: "https://outrightinternational.org/sites/default/files/logo_0.png",
+  website: "https://outrightinternational.org/"
 },
 {
-	name: "Global Health & Development Fund (EA Funds)",
-	description: "Supporting high‑impact global health and development initiatives recommended by GiveWell.",
-	image: "https://ea-funds.org/assets/logo.png",
-	website: "https://ea-funds.org/global-health-development-fund"
+  name: "Hivos",
+  description: "Hivos is an international organization committed to achieving a fair, free, and sustainable world. Working in partnership with local civil society actors, Hivos supports innovative initiatives in areas such as renewable energy, women’s empowerment, LGBTQ rights, and food sovereignty, particularly in Latin America, Africa, and Southeast Asia.",
+  image: "https://hivos.org/wp-content/themes/hivos/assets/img/logo.png",
+  website: "https://hivos.org/"
 },
 {
-	name: "Animal Welfare Fund (EA Funds)",
-	description: "Backing top‑rated animal welfare efforts evaluated by Animal Charity Evaluators.",
-	image: "https://ea-funds.org/assets/animal-logo.png",
-	website: "https://ea-funds.org/animal-welfare-fund"
+  name: "ECPAT International",
+  description: "ECPAT International is a global network dedicated to ending the sexual exploitation of children. With partners in over 100 countries, ECPAT advocates for stronger legal frameworks, supports survivors, conducts research, and raises awareness to prevent trafficking, online exploitation, child prostitution, and abuse around the world.",
+  image: "https://ecpat.org/theme/ecpat/images/logo.png",
+  website: "https://ecpat.org/"
 },
 {
-	name: "Climate Change Fund (Founders Pledge)",
-	description: "Funding high‑leverage climate change solutions backed by Founders Pledge research.",
-	image: "https://founderspledge.com/assets/logo-climate.png",
-	website: "https://founderspledge.com/climate-change-fund"
+  name: "War Child",
+  description: "War Child is an international organization focused on supporting children affected by war and armed conflict. Through programs in education, mental health, protection, and advocacy, War Child helps children heal, learn, and build their futures in safe and supportive environments—even in some of the world’s most dangerous places.",
+  image: "https://www.warchild.org.uk/sites/default/files/wc_logo.png",
+  website: "https://www.warchild.org/"
 },
 {
-	name: "Maximum Impact Fund (GiveWell)",
-	description: "Allocates donations across GiveWell's top recommended charities for maximum impact.",
-	image: "https://givewell.org/assets/logo.png",
-	website: "https://givewell.org/fund/maximum-impact"
+  name: "Global Health & Development Fund (EA Funds)",
+  description: "The Global Health & Development Fund, managed by Effective Altruism Funds, supports high-impact initiatives that improve lives in the developing world. Donations are directed to top-performing charities and research-backed interventions—such as health treatments, deworming, and poverty alleviation—that offer measurable, cost-effective benefits to millions.",
+  image: "https://ea-funds.org/assets/logo.png",
+  website: "https://ea-funds.org/global-health-development-fund"
 },
 {
-	name: "Lifewater International",
-	description: "A Christian clean water organization serving vulnerable children and families through safe water, sanitation, and hygiene.",
-	image: "https://lifewater.org/wp-content/uploads/2020/02/lifewater-logo-blue.png",
-	website: "https://lifewater.org/"
+  name: "Animal Welfare Fund (EA Funds)",
+  description: "The Animal Welfare Fund, part of the Effective Altruism Funds program, supports the most impactful initiatives to reduce animal suffering globally. Guided by expert advisors and informed by research from Animal Charity Evaluators, the fund directs donations to high-leverage projects in farm animal welfare, advocacy, and policy reform.",
+  image: "https://ea-funds.org/assets/animal-logo.png",
+  website: "https://ea-funds.org/animal-welfare-fund"
 },
 {
-	name: "The Ocean Cleanup",
-	description: "Developing advanced technologies to rid the oceans of plastic by cleaning up existing pollution and intercepting it in rivers.",
-	image: "https://theoceancleanup.com/app/themes/theoceancleanup/dist/images/logo.svg",
-	website: "https://theoceancleanup.com/"
+  name: "Climate Change Fund (Founders Pledge)",
+  description: "The Climate Change Fund, run by Founders Pledge, channels donations to the most effective climate solutions based on rigorous analysis. Focusing on innovation, policy change, and high-impact advocacy, the fund supports scalable interventions that can significantly reduce global carbon emissions and mitigate the long-term effects of climate change.",
+  image: "https://founderspledge.com/assets/logo-climate.png",
+  website: "https://founderspledge.com/climate-change-fund"
 },
 {
-	name: "Human Rights Watch",
-	description: "Investigating and reporting on abuses happening in all corners of the world to protect the rights of people globally.",
-	image: "https://www.hrw.org/themes/custom/hrw/logo.svg",
-	website: "https://www.hrw.org/"
+  name: "Maximum Impact Fund (GiveWell)",
+  description: "GiveWell’s Maximum Impact Fund allocates donations to its highest-impact charities based on real-time needs and cost-effectiveness analysis. The fund supports interventions that save or improve the most lives per dollar, such as malaria prevention, malnutrition treatment, and cash transfers to the world’s poorest families.",
+  image: "https://givewell.org/assets/logo.png",
+  website: "https://givewell.org/fund/maximum-impact"
 },
 {
-	name: "World Bicycle Relief",
-	description: "Mobilizing people through the power of bicycles to help students, health workers, and entrepreneurs reach their goals.",
-	image: "https://worldbicyclerelief.org/wp-content/uploads/2021/01/wbr-logo.svg",
-	website: "https://worldbicyclerelief.org/"
+  name: "Lifewater International",
+  description: "Lifewater International is a Christian nonprofit that partners with rural communities in Africa and Southeast Asia to provide safe water, improved sanitation, and hygiene education. With a focus on long-term transformation, Lifewater empowers local leaders and promotes sustainable solutions that dramatically improve child health and reduce preventable diseases.",
+  image: "https://lifewater.org/wp-content/uploads/2020/02/lifewater-logo-blue.png",
+  website: "https://lifewater.org/"
 },
 {
-	name: "GiveDirectly"
-	description: "Delivering unconditional cash transfers directly to people living in poverty, empowering them to choose how best to improve their lives.",
-	image: "https://givedirectly.org/wp-content/uploads/2020/11/logo.svg",
-	website: "https://givedirectly.org/"
+  name: "The Ocean Cleanup",
+  description: "The Ocean Cleanup is a nonprofit engineering organization that develops and deploys advanced technologies to remove plastic pollution from the world’s oceans and rivers. With its large-scale cleanup systems and Interceptor solutions for river pollution, the organization targets the most polluted waterways and ocean garbage patches to restore marine ecosystems.",
+  image: "https://theoceancleanup.com/app/themes/theoceancleanup/dist/images/logo.svg",
+  website: "https://theoceancleanup.com/"
 },
-  {
-    name: "Pencils of Promise",
-    description: "Building schools and increasing educational opportunities in the developing world.",
-    image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
-    website: "https://pencilsofpromise.org/"
-  },
+{
+  name: "Human Rights Watch",
+  description: "Human Rights Watch is an international NGO that investigates and exposes human rights violations in more than 100 countries. Through detailed reporting, legal advocacy, and media engagement, HRW influences policymakers and holds governments accountable, defending the rights of marginalized populations and promoting global justice.",
+  image: "https://www.hrw.org/themes/custom/hrw/logo.svg",
+  website: "https://www.hrw.org/"
+},
+{
+  name: "World Bicycle Relief",
+  description: "World Bicycle Relief mobilizes individuals in developing regions through access to specially designed, rugged bicycles. By helping students travel to school, health workers reach patients, and entrepreneurs grow their businesses, the organization promotes education, healthcare, and economic opportunity in rural and underserved communities.",
+  image: "https://worldbicyclerelief.org/wp-content/uploads/2021/01/wbr-logo.svg",
+  website: "https://worldbicyclerelief.org/"
+},
+{
+  name: "GiveDirectly",
+  description: "GiveDirectly is a pioneering nonprofit that delivers unconditional cash transfers directly to people living in extreme poverty. By trusting recipients to make their own financial decisions, GiveDirectly empowers individuals to meet their most urgent needs—whether food, shelter, education, or investment—while promoting dignity and economic self-sufficiency.",
+  image: "https://givedirectly.org/wp-content/uploads/2020/11/logo.svg",
+  website: "https://givedirectly.org/"
+},
+{
+  name: "Pencils of Promise",
+  description: "Pencils of Promise is a nonprofit organization dedicated to increasing access to quality education for children in underserved communities around the world. By building safe, modern schools, training teachers, and providing educational resources, the organization empowers students to reach their full potential. With a strong focus on sustainability, community involvement, and measurable outcomes, Pencils of Promise has helped thousands of children gain the tools they need for a brighter future.",
+  image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
+  website: "https://pencilsofpromise.org/"
+},
   {
     name: "The Brain Tumor Charity",
     description: "The Brain Tumor Charity works on funding research for brain tumors and spreading stories of brain cancer survivors and victims.",
