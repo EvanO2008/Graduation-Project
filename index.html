@@ -9,10 +9,13 @@
 <body>
   <div class="container">
     <h1>Charity Finder</h1>
+    <p>Current Time: <span id="currentTime"></span></p>
+
     <input type="text" id="searchInput" placeholder="Search charities..." oninput="handleSearch()" />
     <div id="charityList" class="charity-list"></div>
   </div>
 
+  <script src="script.js"></script>
   <script>
     let charities = [];
 
@@ -47,7 +50,7 @@
         const el = document.createElement('div');
         el.className = 'charity-item';
         el.innerHTML = `
-          <img src="${c.image}" alt="${c.name}">
+          <img src="${c.image}" alt="${c.name}" />
           <h3>${c.name}</h3>
           <p>${c.description}</p>
           <a href="${c.website}" target="_blank">Visit Website</a>
