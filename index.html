@@ -1,12 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .search-container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 50%;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <h1>Charity Search</h1>
+        <form id="searchForm" onsubmit="handleSearch(event)">
+            <input type="text" id="searchInput" placeholder="Search for charities or issues..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (searchQuery) {
+                window.location.href = `about.html?q=${encodeURIComponent(searchQuery)}`;
+            }
+        }
+    </script>
+
+</body>
 </html>
