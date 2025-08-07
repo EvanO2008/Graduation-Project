@@ -172,6 +172,66 @@ const charities = [
 	description: "Building schools and increasing educational opportunities in the developing world.",
 	image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
 	website: "https://pencilsofpromise.org/"
+},
+{
+	name: "Médecins Sans Frontières",
+	description: "Providing independent emergency medical aid in conflict zones and areas affected by endemic disease.",
+	image: "https://www.msf.org/themes/custom/msf/logo.svg",
+	website: "https://www.msf.org/"
+},
+{
+	name: "ActionAid",
+	description: "Working to combat poverty and injustice worldwide through community‑driven campaigns.",
+	image: "https://www.actionaid.org/sites/all/themes/actionaid/logo.svg",
+	website: "https://www.actionaid.org/"
+},
+{
+	name: "OutRight Action International",
+	description: "Advocating for global human rights and protections for LGBTQI people across regions.",
+	image: "https://outrightinternational.org/sites/default/files/logo_0.png",
+	website: "https://outrightinternational.org/"
+},
+{
+	name: "Hivos",
+	description: "Promoting sustainable development, gender equality, climate justice, and civic rights.",
+	image: "https://hivos.org/wp-content/themes/hivos/assets/img/logo.png",
+	website: "https://hivos.org/"
+},
+{
+	name: "ECPAT International",
+	description: "A global network working to end the sexual exploitation of children.",
+	image: "https://ecpat.org/theme/ecpat/images/logo.png",
+	website: "https://ecpat.org/"
+},
+{
+	name: "War Child",
+	description: "Supporting children affected by conflict through education, mental health services, and protection.",
+	image: "https://www.warchild.org.uk/sites/default/files/wc_logo.png",
+	website: "https://www.warchild.org/"
+},
+{
+	name: "Global Health & Development Fund (EA Funds)",
+	description: "Supporting high‑impact global health and development initiatives recommended by GiveWell.",
+	image: "https://ea-funds.org/assets/logo.png",
+	website: "https://ea-funds.org/global-health-development-fund"
+},
+{
+	name: "Animal Welfare Fund (EA Funds)",
+	description: "Backing top‑rated animal welfare efforts evaluated by Animal Charity Evaluators.",
+	image: "https://ea-funds.org/assets/animal-logo.png",
+	website: "https://ea-funds.org/animal-welfare-fund"
+},
+{
+	name: "Climate Change Fund (Founders Pledge)",
+	description: "Funding high‑leverage climate change solutions backed by Founders Pledge research.",
+	image: "https://founderspledge.com/assets/logo-climate.png",
+	website: "https://founderspledge.com/climate-change-fund"
+},
+{
+	name: "Maximum Impact Fund (GiveWell)",
+	description: "Allocates donations across GiveWell's top recommended charities for maximum impact.",
+	image: "https://givewell.org/assets/logo.png",
+	website: "https://givewell.org/fund/maximum-impact"
 }
 	
 ];
