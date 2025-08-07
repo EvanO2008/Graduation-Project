@@ -252,9 +252,21 @@
       });
     }
 
+    function removeExactDuplicates(arr) {
+      const seen = new Set();
+      return arr.filter(item => {
+        const key = JSON.stringify(item);
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    }
+
+    const uniqueCharities = removeExactDuplicates(charities);
+
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase();
-      const filtered = charities.filter(charity =>
+      const filtered = uniqueCharities.filter(charity =>
         charity.name.toLowerCase().includes(query) ||
         charity.description.toLowerCase().includes(query) ||
         (charity.keywords && charity.keywords.join(' ').toLowerCase().includes(query))
@@ -262,7 +274,7 @@
       displayCharities(filtered);
     });
 
-    displayCharities(charities);
+    displayCharities(uniqueCharities);
 
     function toggleMenu() {
       const nav = document.querySelector('nav');
