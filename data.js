@@ -38,7 +38,7 @@ const charities = [
   {
     name: "Charity: Water",
     description: "Bringing clean and safe drinking water to people in developing countries.",
-    image: "https://www.charitywater.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.bf3fd0f4.svg&w=3840&q=75",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIORVrYC3JP3PKCjjrAWfTdi_r14KbjH0trQ&s",
     website: "https://www.charitywater.org/"
   }
 ];
