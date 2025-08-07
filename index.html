@@ -230,26 +230,34 @@
     <div id="charityList" class="charity-list"></div>
   </div>
 
-  <script src="data.js"></script>
+  <script src="data.js"></script> <!-- Your 700+ records loaded here -->
+
   <script>
     const charityList = document.getElementById('charityList');
     const searchInput = document.getElementById('searchInput');
 
-    function displayCharities(filteredCharities) {
-      charityList.innerHTML = '';
-      filteredCharities.forEach((charity, index) => {
+    const ITEMS_PER_BATCH = 20;
+
+    let filteredCharities = [];
+    let currentIndex = 0;
+
+    function displayCharitiesBatch() {
+      const endIndex = Math.min(currentIndex + ITEMS_PER_BATCH, filteredCharities.length);
+      for (let i = currentIndex; i < endIndex; i++) {
+        const charity = filteredCharities[i];
         const card = document.createElement('div');
         card.className = 'charity-card';
-        card.style.animationDelay = `${index * 80}ms`;
+        card.style.animationDelay = `${(i % ITEMS_PER_BATCH) * 80}ms`;
         card.innerHTML = `
           <div class="charity-card-content">
             <h2>${charity.name}</h2>
             <p>${charity.description}</p>
-            <a href="${charity.website}" target="_blank">Visit Website</a>
+            <a href="${charity.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
           </div>
         `;
         charityList.appendChild(card);
-      });
+      }
+      currentIndex = endIndex;
     }
 
     function removeExactDuplicates(arr) {
@@ -262,19 +270,38 @@
       });
     }
 
+    // Deduplicate full dataset first
     const uniqueCharities = removeExactDuplicates(charities);
 
-    searchInput.addEventListener('input', () => {
+    function filterCharities() {
       const query = searchInput.value.toLowerCase();
-      const filtered = uniqueCharities.filter(charity =>
+      filteredCharities = uniqueCharities.filter(charity =>
         charity.name.toLowerCase().includes(query) ||
         charity.description.toLowerCase().includes(query) ||
         (charity.keywords && charity.keywords.join(' ').toLowerCase().includes(query))
       );
-      displayCharities(filtered);
-    });
+      charityList.innerHTML = '';
+      currentIndex = 0;
+      displayCharitiesBatch();
+    }
 
-    displayCharities(uniqueCharities);
+    function onScroll() {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const nearBottom = document.body.offsetHeight - 100;
+
+      if (scrollPosition >= nearBottom) {
+        if (currentIndex < filteredCharities.length) {
+          displayCharitiesBatch();
+        }
+      }
+    }
+
+    // Initial load of all charities (first batch)
+    filteredCharities = uniqueCharities;
+    displayCharitiesBatch();
+
+    searchInput.addEventListener('input', filterCharities);
+    window.addEventListener('scroll', onScroll);
 
     function toggleMenu() {
       const nav = document.querySelector('nav');
