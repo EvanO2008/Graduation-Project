@@ -300,12 +300,6 @@ const charities = [
     keywords: ["crisis", "community", "global", "relief", "development"]
   },
   {
-    name: "Doctors Without Borders",
-    description: "Provides medical care to people affected by conflict, epidemics, disasters, or exclusion from healthcare.",
-    website: "https://www.doctorswithoutborders.org",
-    keywords: ["healthcare", "medical", "disasters", "global", "emergency"]
-  },
-  {
     name: "Special Olympics",
     description: "Provides year-round sports training and athletic competition for children and adults with intellectual disabilities.",
     website: "https://www.specialolympics.org",
@@ -364,12 +358,6 @@ const charities = [
     description: "Funds charitable programs that work to protect our planet for future generations.",
     website: "https://www.sierraclubfoundation.org",
     keywords: ["environment", "conservation", "climate", "advocacy", "wilderness"]
-  },
-  {
-    name: "The Nature Conservancy",
-    description: "Works to protect the lands and waters on which all life depends.",
-    website: "https://www.nature.org",
-    keywords: ["nature", "conservation", "environment", "land", "water"]
   },
   {
     name: "Oceana",
@@ -450,22 +438,10 @@ const charities = [
     keywords: ["youth", "education", "children", "mentoring", "community"]
   },
   {
-    name: "The Nature Conservancy",
-    description: "Protects and restores important natural lands and waters.",
-    website: "https://www.nature.org",
-    keywords: ["conservation", "nature", "land", "water", "environment"]
-  },
-  {
     name: "National Wildlife Federation",
     description: "Unites all Americans to ensure wildlife thrive in a rapidly changing world.",
     website: "https://www.nwf.org",
     keywords: ["wildlife", "conservation", "environment", "animals", "habitat"]
-  },
-  {
-    name: "Feeding America",
-    description: "National network of food banks working to fight hunger in the United States.",
-    website: "https://www.feedingamerica.org",
-    keywords: ["hunger", "food", "america", "relief", "meals"]
   },
   {
     name: "Make-A-Wish Foundation",
@@ -486,22 +462,10 @@ const charities = [
     keywords: ["children", "cancer", "research", "treatment", "hospital"]
   },
   {
-    name: "American Cancer Society",
-    description: "Funds cancer research and provides information and support to people with cancer.",
-    website: "https://www.cancer.org",
-    keywords: ["cancer", "research", "health", "support", "advocacy"]
-  },
-  {
     name: "American Heart Association",
     description: "Funds research and provides education to fight heart disease and stroke.",
     website: "https://www.heart.org",
     keywords: ["heart", "health", "research", "stroke", "disease"]
-  },
-  {
-    name: "World Wildlife Fund",
-    description: "Works to conserve nature and reduce the most pressing threats to the diversity of life on Earth.",
-    website: "https://www.worldwildlife.org",
-    keywords: ["wildlife", "conservation", "environment", "nature", "animals"]
   },
   {
     name: "American Civil Liberties Union (ACLU)",
@@ -684,12 +648,6 @@ const charities = [
     keywords: ["environment", "conservation", "climate", "advocacy", "wilderness"]
   },
   {
-    name: "The Nature Conservancy",
-    description: "Works to protect the lands and waters on which all life depends.",
-    website: "https://www.nature.org",
-    keywords: ["nature", "conservation", "environment", "land", "water"]
-  },
-  {
     name: "Oceana",
     description: "Works to protect and restore the world’s oceans.",
     website: "https://oceana.org",
@@ -768,22 +726,10 @@ const charities = [
     keywords: ["youth", "education", "children", "mentoring", "community"]
   },
   {
-    name: "The Nature Conservancy",
-    description: "Protects and restores important natural lands and waters.",
-    website: "https://www.nature.org",
-    keywords: ["conservation", "nature", "land", "water", "environment"]
-  },
-  {
     name: "National Wildlife Federation",
     description: "Unites all Americans to ensure wildlife thrive in a rapidly changing world.",
     website: "https://www.nwf.org",
     keywords: ["wildlife", "conservation", "environment", "animals", "habitat"]
-  },
-  {
-    name: "Feeding America",
-    description: "National network of food banks working to fight hunger in the United States.",
-    website: "https://www.feedingamerica.org",
-    keywords: ["hunger", "food", "america", "relief", "meals"]
   },
   {
     name: "Make-A-Wish Foundation",
@@ -804,22 +750,10 @@ const charities = [
     keywords: ["children", "cancer", "research", "treatment", "hospital"]
   },
   {
-    name: "American Cancer Society",
-    description: "Funds cancer research and provides information and support to people with cancer.",
-    website: "https://www.cancer.org",
-    keywords: ["cancer", "research", "health", "support", "advocacy"]
-  },
-  {
     name: "American Heart Association",
     description: "Funds research and provides education to fight heart disease and stroke.",
     website: "https://www.heart.org",
     keywords: ["heart", "health", "research", "stroke", "disease"]
-  },
-  {
-    name: "World Wildlife Fund",
-    description: "Works to conserve nature and reduce the most pressing threats to the diversity of life on Earth.",
-    website: "https://www.worldwildlife.org",
-    keywords: ["wildlife", "conservation", "environment", "nature", "animals"]
   },
   {
     name: "American Civil Liberties Union (ACLU)",
