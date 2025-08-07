@@ -346,5 +346,125 @@ const charities = [
     description: "Provides shelter, food, and services for homeless youth.",
     website: "https://www.covenanthouse.org",
     keywords: ["homelessness", "youth", "shelter", "food", "services"]
+  },
+  {
+    name: "Water.org",
+    description: "Provides access to safe water and sanitation for millions in developing countries.",
+    website: "https://www.water.org",
+    keywords: ["water", "sanitation", "global", "health", "access"]
+  },
+  {
+    name: "St. Jude Children's Research Hospital",
+    description: "Researches and treats childhood cancer and other life-threatening diseases.",
+    website: "https://www.stjude.org",
+    keywords: ["children", "cancer", "research", "treatment", "health"]
+  },
+  {
+    name: "Oxfam",
+    description: "Works to alleviate global poverty through relief and development programs.",
+    website: "https://www.oxfam.org",
+    keywords: ["poverty", "global", "relief", "development", "justice"]
+  },
+  {
+    name: "Goodwill Industries International",
+    description: "Empowers individuals and families through education, job training, and employment services.",
+    website: "https://www.goodwill.org",
+    keywords: ["employment", "education", "job training", "empowerment", "community"]
+  },
+  {
+    name: "American Heart Association",
+    description: "Fights heart disease and stroke through research, education, and advocacy.",
+    website: "https://www.heart.org",
+    keywords: ["heart disease", "stroke", "research", "health", "education"]
+  },
+  {
+    name: "Make-A-Wish Foundation",
+    description: "Grants the wishes of children with life-threatening medical conditions.",
+    website: "https://www.wish.org",
+    keywords: ["children", "wish", "disease", "cancer", "hope"]
+  },
+  {
+    name: "International Rescue Committee",
+    description: "Provides humanitarian aid and development assistance to refugees and displaced persons.",
+    website: "https://www.rescue.org",
+    keywords: ["refugees", "humanitarian", "aid", "displaced", "global"]
+  },
+  {
+    name: "The Salvation Army",
+    description: "Provides emergency shelter, food, and social services to individuals and families in need.",
+    website: "https://www.salvationarmyusa.org",
+    keywords: ["shelter", "food", "social services", "help", "community"]
+  },
+  {
+    name: "GlobalGiving",
+    description: "Connects nonprofits, donors, and companies to help communities thrive.",
+    website: "https://www.globalgiving.org",
+    keywords: ["donate", "global", "community", "support", "nonprofit"]
+  },
+  {
+    name: "Habitat for Humanity",
+    description: "Helps build homes and communities for people in need of safe and affordable housing.",
+    website: "https://www.habitat.org",
+    keywords: ["housing", "community", "construction", "home", "affordable"]
+  },
+  {
+    name: "Heifer International",
+    description: "Works to end hunger and poverty through sustainable agriculture.",
+    website: "https://www.heifer.org",
+    keywords: ["hunger", "poverty", "agriculture", "sustainability", "end hunger"]
+  },
+  {
+    name: "The American Civil Liberties Union",
+    description: "Defends and preserves individual rights and liberties guaranteed by the Constitution.",
+    website: "https://www.aclu.org",
+    keywords: ["civil rights", "liberties", "defense", "advocacy", "justice"]
+  },
+  {
+    name: "Wounded Warrior Project",
+    description: "Provides services to veterans who have incurred physical or mental injuries.",
+    website: "https://www.woundedwarriorproject.org",
+    keywords: ["veterans", "injuries", "support", "mental health", "care"]
+  },
+  {
+    name: "The Nature Conservancy",
+    description: "Works to protect the lands and waters on which all life depends.",
+    website: "https://www.nature.org",
+    keywords: ["nature", "conservation", "environment", "land", "water"]
+  },
+  {
+    name: "National Geographic Society",
+    description: "Supports exploration and education, focusing on the planet's greatest challenges.",
+    website: "https://www.nationalgeographic.org",
+    keywords: ["exploration", "education", "environment", "planet", "science"]
+  },
+  {
+    name: "Oceana",
+    description: "Works to protect and restore the oceans on a global scale.",
+    website: "https://www.oceana.org",
+    keywords: ["ocean", "environment", "conservation", "marine life", "oceans"]
+  },
+  {
+    name: "The Red Cross",
+    description: "Provides emergency assistance, disaster relief, and disaster preparedness education.",
+    website: "https://www.redcross.org",
+    keywords: ["disaster", "relief", "emergency", "blood", "preparedness"]
+  },
+  {
+    name: "Rotary International",
+    description: "Works to solve global issues through community service and volunteerism.",
+    website: "https://www.rotary.org",
+    keywords: ["community", "service", "volunteer", "global", "peace"]
+  },
+  {
+    name: "ChildFund International",
+    description: "Helps children and families in need through child sponsorship programs.",
+    website: "https://www.childfund.org",
+    keywords: ["children", "sponsorship", "health", "education", "global"]
+  },
+  {
+    name: "UNICEF USA",
+    description: "Provides life-saving programs to children in need worldwide.",
+    website: "https://www.unicefusa.org",
+    keywords: ["children", "education", "health", "emergency", "nutrition"]
   }
 ];
