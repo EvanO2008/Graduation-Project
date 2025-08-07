@@ -1,0 +1,8 @@
+Database Format (8/7/25 12:29): --------------------
+
+{
+  name: "Charity Name",
+  description: "Brief description of what the charity does.",
+  website: "https://www.example.org",
+  keywords: ["keyword1", "keyword2", "keyword3"]
+}
