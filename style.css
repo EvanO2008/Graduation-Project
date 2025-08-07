@@ -1,98 +1,49 @@
 /* not for index */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom right, #f0f4f8, #e2e8f0);
-  color: #1e293b;
-  min-height: 100vh;
-}
-
-nav {
-  background: #1d4ed8;
-  padding: 16px 20px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-nav a {
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
   color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  position: relative;
-  padding-bottom: 4px;
-  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  left: 0;
-  bottom: 0;
-  transition: width 0.3s ease;
+.side-menu {
+  display: flex;
+  gap: 40px;
 }
 
-nav a:hover::after,
-nav a.active::after {
-  width: 100%;
-}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
 
-nav a:hover {
-  color: #c7d2fe;
-}
-
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
-  animation: fadeIn 0.8s ease-in-out;
-}
-
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: #1e3a8a;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #334155;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 600px) {
-  nav {
+  .side-menu {
     flex-direction: column;
-    gap: 12px;
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 250px;
+    height: 100%;
+    background: #1d4ed8;
+    padding: 80px 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
   }
 
-  .container {
-    padding: 20px;
+  .side-menu.open {
+    right: 0;
   }
 
-  h1 {
-    font-size: 1.6rem;
+  .side-menu a {
+    font-size: 1.1rem;
+    color: #ffffff;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    align-items: center;
   }
 }
