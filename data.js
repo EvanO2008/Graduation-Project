@@ -232,7 +232,38 @@ const charities = [
 	description: "Allocates donations across GiveWell's top recommended charities for maximum impact.",
 	image: "https://givewell.org/assets/logo.png",
 	website: "https://givewell.org/fund/maximum-impact"
-}
+},
+{
+	name: "Lifewater International",
+	description: "A Christian clean water organization serving vulnerable children and families through safe water, sanitation, and hygiene.",
+	image: "https://lifewater.org/wp-content/uploads/2020/02/lifewater-logo-blue.png",
+	website: "https://lifewater.org/"
+},
+{
+	name: "The Ocean Cleanup",
+	description: "Developing advanced technologies to rid the oceans of plastic by cleaning up existing pollution and intercepting it in rivers.",
+	image: "https://theoceancleanup.com/app/themes/theoceancleanup/dist/images/logo.svg",
+	website: "https://theoceancleanup.com/"
+},
+{
+	name: "Human Rights Watch",
+	description: "Investigating and reporting on abuses happening in all corners of the world to protect the rights of people globally.",
+	image: "https://www.hrw.org/themes/custom/hrw/logo.svg",
+	website: "https://www.hrw.org/"
+},
+{
+	name: "World Bicycle Relief",
+	description: "Mobilizing people through the power of bicycles to help students, health workers, and entrepreneurs reach their goals.",
+	image: "https://worldbicyclerelief.org/wp-content/uploads/2021/01/wbr-logo.svg",
+	website: "https://worldbicyclerelief.org/"
+},
+{
+	name: "GiveDirectly",
+	description: "Delivering unconditional cash transfers directly to people living in poverty, empowering them to choose how best to improve their lives.",
+	image: "https://givedirectly.org/wp-content/uploads/2020/11/logo.svg",
+	website: "https://givedirectly.org/"
+},
+
 
 	  {
     name: "Charity Name",
