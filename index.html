@@ -166,7 +166,6 @@
         padding: 16px;
       }
 
-      /* Show hamburger icon on mobile only */
       nav .menu-toggle {
         display: block;
         background-color: #1d4ed8;
@@ -178,7 +177,7 @@
       }
 
       nav .nav-links {
-        display: none; /* Hide menu by default on mobile */
+        display: none;
         flex-direction: column;
         gap: 16px;
         width: 100%;
@@ -186,7 +185,7 @@
       }
 
       nav.open .nav-links {
-        display: flex; /* Show menu when toggled */
+        display: flex;
       }
 
       nav a {
@@ -207,7 +206,6 @@
       }
     }
 
-    /* Hide hamburger icon on desktop */
     @media (min-width: 601px) {
       nav .menu-toggle {
         display: none;
@@ -217,7 +215,6 @@
 </head>
 <body>
   <nav>
-    <!-- Hamburger icon for mobile -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="nav-links">
       <a href="index.html" class="active">Search</a>
