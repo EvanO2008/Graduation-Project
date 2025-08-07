@@ -22,11 +22,18 @@
 
     nav {
       background: #1d4ed8;
-      padding: 16px 20px;
+      padding: 16px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-grow: 1;
     }
 
     nav a {
@@ -159,6 +166,7 @@
         padding: 16px;
       }
 
+      /* Show hamburger icon on mobile only */
       nav .menu-toggle {
         display: block;
         background-color: #1d4ed8;
@@ -169,11 +177,19 @@
         cursor: pointer;
       }
 
-      nav a {
-        display: none;
+      nav .nav-links {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        text-align: center;
       }
 
-      nav.open a {
+      nav.open .nav-links {
+        display: flex; /* Show menu when toggled */
+      }
+
+      nav a {
         display: block;
         margin: 12px 0;
       }
@@ -190,10 +206,18 @@
         font-size: 15px;
       }
     }
+
+    /* Hide hamburger icon on desktop */
+    @media (min-width: 601px) {
+      nav .menu-toggle {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <nav>
+    <!-- Hamburger icon for mobile -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="nav-links">
       <a href="index.html" class="active">Search</a>
