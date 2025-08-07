@@ -22,5 +22,24 @@
     "description": "Helping families build and improve places they can call home.",
     "image": "images/habitat-for-humanity.jpg",
     "website": "https://www.habitat.org"
-  }
+  },
+  {
+    "name" : "Doctors Without Borders",
+    "description": "Delivering impartial aid regardless of race, religion, or politics in over 70 countries.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2DT9CdnPa5A17WhnLGU2XUrdUwUbBPmuZQ&s",
+    "website" "https://give.doctorswithoutborders.org"
+  },
+  {
+  "name": "Heifer International",
+  "description": "Helping communities fight hunger and poverty through sustainable agriculture and livestock.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrECeMg9jXHFZbJ8UG3WBXJb8nCRL5Nu8gA&s",
+  "website": "https://www.heifer.org"
+},
+{
+  "name": "Charity: Water",
+  "description": "Bringing clean and safe drinking water to people in developing countries.",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9umWwnN8EsxijISn5PPXtc9SfsJ0raGABA&s",
+  "website": "https://www.charitywater.org"
+},
+  
 ]
