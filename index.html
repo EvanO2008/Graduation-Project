@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Charity Finder</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -11,55 +11,10 @@
     <h1>Charity Finder</h1>
     <p>Current Time: <span id="currentTime"></span></p>
 
-    <input type="text" id="searchInput" placeholder="Search charities..." oninput="handleSearch()" />
+    <input type="text" id="searchInput" placeholder="Search charities..." />
     <div id="charityList" class="charity-list"></div>
   </div>
 
   <script src="script.js"></script>
-  <script>
-    let charities = [];
-
-    async function loadCharities() {
-      try {
-        const res = await fetch('database.json');
-        charities = await res.json();
-        display(charities);
-      } catch {
-        document.getElementById('charityList').innerHTML = '<p>Error loading database.</p>';
-      }
-    }
-
-    function handleSearch() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
-      const filtered = charities.filter(c =>
-        c.name.toLowerCase().includes(q) ||
-        c.description.toLowerCase().includes(q)
-      );
-      display(filtered);
-    }
-
-    function display(list) {
-      const out = document.getElementById('charityList');
-      out.innerHTML = '';
-      if (list.length === 0) {
-        out.innerHTML = '<p>No results found.</p>';
-        return;
-      }
-
-      list.forEach(c => {
-        const el = document.createElement('div');
-        el.className = 'charity-item';
-        el.innerHTML = `
-          <img src="${c.image}" alt="${c.name}" />
-          <h3>${c.name}</h3>
-          <p>${c.description}</p>
-          <a href="${c.website}" target="_blank">Visit Website</a>
-        `;
-        out.appendChild(el);
-      });
-    }
-
-    window.onload = loadCharities;
-  </script>
 </body>
 </html>
