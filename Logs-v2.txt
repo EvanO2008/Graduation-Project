@@ -1,3 +1,277 @@
+index 1: ------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Finder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #dbeafe);
+      color: #1e293b;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #1d4ed8;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      padding-bottom: 4px;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      left: 0;
+      bottom: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #c7d2fe;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #1e3a8a;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 16px;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    #searchInput:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+    }
+
+    .charity-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .charity-card {
+      background: #eff6ff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    .charity-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .charity-card h2 {
+      font-size: 1.3rem;
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .charity-card p {
+      font-size: 0.95rem;
+      color: #334155;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .charity-card a {
+      background-color: #3b82f6;
+      color: white;
+      padding: 12px;
+      display: inline-block;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .charity-card a:hover {
+      background-color: #2563eb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+      }
+
+      nav .menu-toggle {
+        display: block;
+        background-color: #1d4ed8;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+      }
+
+      nav .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        text-align: center;
+      }
+
+      nav.open .nav-links {
+        display: flex;
+      }
+
+      nav a {
+        display: block;
+        margin: 12px 0;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      #searchInput {
+        font-size: 15px;
+      }
+    }
+
+    @media (min-width: 601px) {
+      nav .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Search</a>
+      <a href="about.html">About Us</a>
+      <a href="donate.html">Donate</a>
+      <a href="other.html">Other</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Find a Charity</h1>
+    <input type="text" id="searchInput" placeholder="Search by name, cause, or keywords..." />
+    <div id="charityList" class="charity-list"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    const charityList = document.getElementById('charityList');
+    const searchInput = document.getElementById('searchInput');
+
+    function displayCharities(filteredCharities) {
+      charityList.innerHTML = '';
+      filteredCharities.forEach((charity, index) => {
+        const card = document.createElement('div');
+        card.className = 'charity-card';
+        card.style.animationDelay = `${index * 80}ms`;
+        card.innerHTML = `
+          <div class="charity-card-content">
+            <h2>${charity.name}</h2>
+            <p>${charity.description}</p>
+            <a href="${charity.website}" target="_blank">Visit Website</a>
+          </div>
+        `;
+        charityList.appendChild(card);
+      });
+    }
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      const filtered = charities.filter(charity =>
+        charity.name.toLowerCase().includes(query) ||
+        charity.description.toLowerCase().includes(query) ||
+        (charity.keywords && charity.keywords.join(' ').toLowerCase().includes(query))
+      );
+      displayCharities(filtered);
+    });
+
+    displayCharities(charities);
+
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
 index 0: ------------------------
 <!DOCTYPE html>
 <html lang="en">
