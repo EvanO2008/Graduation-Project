@@ -42,135 +42,136 @@ const charities = [
     website: "https://www.charitywater.org/"
   },
   {
-		name: "Feeding America",
-		description: "Feeding America is a nationwide network of food banks that feeds millions of people through food pantries and meal programs.",
-		image: "https://www.feedingamerica.org/sites/default/files/styles/open_graph_image/public/2019-05/FA-FB-Share.png",
-		website: "https://www.feedingamerica.org/"
-	},
-	{
-		name: "Rainforest Alliance",
-		description: "Fighting deforestation and climate change through sustainable practices.",
-		image: "https://www.rainforest-alliance.org/wp-content/themes/rainforest/img/RA_Seal_Standard_Logo.svg",
-		website: "https://www.rainforest-alliance.org/"
-	},
-	{
-		name: "Team Rubicon",
-		description: "Disaster response organization that utilizes the skills of military veterans to respond to emergencies.",
-		image: "https://teamrubiconusa.org/wp-content/uploads/2020/06/TR_Logo_LightRed.png",
-		website: "https://teamrubiconusa.org/"
-	},
-  {
-		name: "UNICEF",
-		description: "Helping children around the world survive and thrive.",
-		image: "https://www.unicef.org/themes/custom/unicef/assets/images/unicef-logo.png",
-		website: "https://www.unicef.org/"
-	},
-  {
-		name: "International Rescue Committee",
-		description: "Helping people whose lives are shattered by conflict and disaster to survive, recover and gain control of their future.",
-		image: "https://www.rescue.org/sites/default/files/styles/irc_logo/public/irc-logo.png",
-		website: "https://www.rescue.org/"
-	},
-	{
-		name: "GlobalGiving",
-		description: "Connecting donors with grassroots projects around the world to make a high-impact change.",
-		image: "https://www.globalgiving.org/img/logo/globalgiving-logo.png",
-		website: "https://www.globalgiving.org/"
-	},
-	{
-		name: "One Acre Fund",
-		description: "Helping smallholder farmers in Africa grow their way out of hunger and build lasting prosperity.",
-		image: "https://oneacrefund.org/themes/custom/oaf/logo.svg",
-		website: "https://oneacrefund.org/"
-	},
-  {
-		name: "Oxfam International",
-		description: "A global movement of people working together to end the injustice of poverty.",
-		image: "https://www.oxfam.org/themes/custom/oxfam/logo.svg",
-		website: "https://www.oxfam.org/"
-	},
-	{
-		name: "Amnesty International",
-		description: "Campaigning for human rights and fighting injustice worldwide.",
-		image: "https://www.amnesty.org/en/wp-content/themes/amnesty/images/amnesty-logo.png",
-		website: "https://www.amnesty.org/"
-	},
-	{
-		name: "The Nature Conservancy",
-		description: "Conserving the lands and waters on which all life depends.",
-		image: "https://www.nature.org/etc/clientlibs/tnc/clientlibs_base/resources/images/tnc-logo-green.svg",
-		website: "https://www.nature.org/"
-	},
-	{
-		name: "Direct Relief",
-		description: "Providing medical assistance to improve the health and lives of people affected by poverty and emergencies.",
-		image: "https://www.directrelief.org/wp-content/uploads/direct-relief-logo.png",
-		website: "https://www.directrelief.org/"
-	},
-	{
-		name: "Room to Read",
-		description: "Creating a world free from illiteracy and gender inequality.",
-		image: "https://www.roomtoread.org/media/2405/logo-horizontal.svg",
-		website: "https://www.roomtoread.org/"
-	},
-	{
-		name: "Water.org",
-		description: "Bringing water and sanitation to the world through access to affordable financing.",
-		image: "https://water.org/assets/logo-waterorg-blue.png",
-		website: "https://water.org/"
-	},
-  {
-		name: "CARE",
-		description: "Fighting global poverty and providing disaster relief, with a special focus on women and girls.",
-		image: "https://www.care.org/wp-content/uploads/2020/05/care-logo.png",
-		website: "https://www.care.org/"
-	},
-	{
-		name: "World Central Kitchen",
-		description: "Providing meals in response to humanitarian, climate, and community crises.",
-		image: "https://wck.org/wp-content/uploads/2022/02/WCK_PrimaryLogo_FullColor_RGB-1-768x392.png",
-		website: "https://wck.org/"
-	},
-	{
-		name: "Project HOPE",
-		description: "Delivering essential medicines and health programs around the world.",
-		image: "https://www.projecthope.org/wp-content/uploads/2022/01/PH_Logo_Blue.png",
-		website: "https://www.projecthope.org/"
-	},
-	{
-		name: "Trees for the Future",
-		description: "Empowering farmers to restore degraded land through agroforestry.",
-		image: "https://trees.org/wp-content/uploads/2018/06/TREES-logo-green.png",
-		website: "https://trees.org/"
-	},
-	{
-		name: "Against Malaria Foundation",
-		description: "Protecting people from malaria by distributing insecticide-treated mosquito nets.",
-		image: "https://www.againstmalaria.com/images/amf-logo-square.png",
-		website: "https://www.againstmalaria.com/"
-	},
-	{
-		name: "Girls Who Code",
-		description: "Closing the gender gap in technology by teaching girls computer science skills.",
-		image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
-		website: "https://girlswhocode.com/"
-	},
-	{
-		name: "Cool Earth",
-		description: "Backing people to protect rainforests and fight the climate crisis.",
-		image: "https://www.coolearth.org/wp-content/themes/coolearth/dist/images/logo.svg",
-		website: "https://www.coolearth.org/"
-	},
-	{
-		name: "The Trevor Project",
-		description: "Providing crisis intervention and suicide prevention services to LGBTQ youth.",
-		image: "https://www.thetrevorproject.org/wp-content/uploads/2021/04/TrevorProject_LogoPrimary-01.svg",
-		website: "https://www.thetrevorproject.org/"
-	},
-	{
-		name: "Pencils of Promise",
-		description: "Building schools and increasing educational opportunities in the developing world.",
-		image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
-		website: "https://pencilsofpromise.org/"
-	}
+	name: "Feeding America",
+	description: "Feeding America is a nationwide network of food banks that feeds millions of people through food pantries and meal programs.",
+	image: "https://www.feedingamerica.org/sites/default/files/styles/open_graph_image/public/2019-05/FA-FB-Share.png",
+	website: "https://www.feedingamerica.org/"
+ },
+{
+	name: "Rainforest Alliance",
+	description: "Fighting deforestation and climate change through sustainable practices.",
+	image: "https://www.rainforest-alliance.org/wp-content/themes/rainforest/img/RA_Seal_Standard_Logo.svg",
+	website: "https://www.rainforest-alliance.org/"
+},
+{
+	name: "Team Rubicon",
+	description: "Disaster response organization that utilizes the skills of military veterans to respond to emergencies.",
+	image: "https://teamrubiconusa.org/wp-content/uploads/2020/06/TR_Logo_LightRed.png",
+	website: "https://teamrubiconusa.org/"
+},
+{
+	name: "UNICEF",
+	description: "Helping children around the world survive and thrive.",
+	image: "https://www.unicef.org/themes/custom/unicef/assets/images/unicef-logo.png",
+	website: "https://www.unicef.org/"
+},
+{
+	name: "International Rescue Committee",
+	description: "Helping people whose lives are shattered by conflict and disaster to survive, recover and gain control of their future.",
+	image: "https://www.rescue.org/sites/default/files/styles/irc_logo/public/irc-logo.png",
+	website: "https://www.rescue.org/"
+},
+{
+	name: "GlobalGiving",
+	description: "Connecting donors with grassroots projects around the world to make a high-impact change.",
+	image: "https://www.globalgiving.org/img/logo/globalgiving-logo.png",
+	website: "https://www.globalgiving.org/"
+},
+{
+	name: "One Acre Fund",
+	description: "Helping smallholder farmers in Africa grow their way out of hunger and build lasting prosperity.",
+	image: "https://oneacrefund.org/themes/custom/oaf/logo.svg",
+	website: "https://oneacrefund.org/"
+},
+{
+	name: "Oxfam International",
+	description: "A global movement of people working together to end the injustice of poverty.",
+	image: "https://www.oxfam.org/themes/custom/oxfam/logo.svg",
+	website: "https://www.oxfam.org/"
+},
+{
+	name: "Amnesty International",
+	description: "Campaigning for human rights and fighting injustice worldwide.",
+	image: "https://www.amnesty.org/en/wp-content/themes/amnesty/images/amnesty-logo.png",
+	website: "https://www.amnesty.org/"
+},
+{
+	name: "The Nature Conservancy",
+	description: "Conserving the lands and waters on which all life depends.",
+	image: "https://www.nature.org/etc/clientlibs/tnc/clientlibs_base/resources/images/tnc-logo-green.svg",
+	website: "https://www.nature.org/"
+},
+{
+	name: "Direct Relief",
+	description: "Providing medical assistance to improve the health and lives of people affected by poverty and emergencies.",
+	image: "https://www.directrelief.org/wp-content/uploads/direct-relief-logo.png",
+	website: "https://www.directrelief.org/"
+},
+{
+	name: "Room to Read",
+	description: "Creating a world free from illiteracy and gender inequality.",
+	image: "https://www.roomtoread.org/media/2405/logo-horizontal.svg",
+	website: "https://www.roomtoread.org/"
+},
+{
+	name: "Water.org",
+	description: "Bringing water and sanitation to the world through access to affordable financing.",
+	image: "https://water.org/assets/logo-waterorg-blue.png",
+	website: "https://water.org/"
+},
+{
+	name: "CARE",
+	description: "Fighting global poverty and providing disaster relief, with a special focus on women and girls.",
+	image: "https://www.care.org/wp-content/uploads/2020/05/care-logo.png",
+	website: "https://www.care.org/"
+},
+{
+	name: "World Central Kitchen",
+	description: "Providing meals in response to humanitarian, climate, and community crises.",
+	image: "https://wck.org/wp-content/uploads/2022/02/WCK_PrimaryLogo_FullColor_RGB-1-768x392.png",
+	website: "https://wck.org/"
+},
+{
+	name: "Project HOPE",
+	description: "Delivering essential medicines and health programs around the world.",
+	image: "https://www.projecthope.org/wp-content/uploads/2022/01/PH_Logo_Blue.png",
+	website: "https://www.projecthope.org/"
+},
+{
+	name: "Trees for the Future",
+	description: "Empowering farmers to restore degraded land through agroforestry.",
+	image: "https://trees.org/wp-content/uploads/2018/06/TREES-logo-green.png",
+	website: "https://trees.org/"
+},
+{
+	name: "Against Malaria Foundation",
+	description: "Protecting people from malaria by distributing insecticide-treated mosquito nets.",
+	image: "https://www.againstmalaria.com/images/amf-logo-square.png",
+	website: "https://www.againstmalaria.com/"
+},
+{
+	name: "Girls Who Code",
+	description: "Closing the gender gap in technology by teaching girls computer science skills.",
+	image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
+	website: "https://girlswhocode.com/"
+},
+{
+	name: "Cool Earth",
+	description: "Backing people to protect rainforests and fight the climate crisis.",
+	image: "https://www.coolearth.org/wp-content/themes/coolearth/dist/images/logo.svg",
+	website: "https://www.coolearth.org/"
+},
+{
+	name: "The Trevor Project",
+	description: "Providing crisis intervention and suicide prevention services to LGBTQ youth.",
+	image: "https://www.thetrevorproject.org/wp-content/uploads/2021/04/TrevorProject_LogoPrimary-01.svg",
+	website: "https://www.thetrevorproject.org/"
+},
+{
+	name: "Pencils of Promise",
+	description: "Building schools and increasing educational opportunities in the developing world.",
+	image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
+	website: "https://pencilsofpromise.org/"
+}
+	
 ];
