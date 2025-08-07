@@ -270,6 +270,66 @@ const charities = [
   website: "https://pencilsofpromise.org/"
 },
   {
+  name: "Clinton Health Access Initiative (CHAI)",
+  description: "CHAI is a global health nonprofit founded in 2002 that works with governments and partners to reduce the burden of diseases—such as HIV/AIDS, malaria, tuberculosis, and maternal health conditions—in low‑ and middle‑income countries. It strengthens health systems by negotiating reduced prices for medicines and diagnostics, scaling up lifesaving technologies, and enabling sustainable, high‑quality care. CHAI currently works across more than 35 countries to enable universal access to essential health services.",
+  image: "https://www.clintonhealthaccess.org/themes/custom/chiastyles/logo.svg",
+  website: "https://www.clintonhealthaccess.org/"
+},
+{
+  name: "PATH",
+  description: "PATH is a global health innovation nonprofit based in Seattle, operating in over 70 countries to accelerate equitable access to vaccines, diagnostics, drugs, and health technologies. It collaborates with public and private partners to design scalable solutions tailored to communities—especially to improve health for women, children, and underserved populations.",
+  image: "https://www.path.org/wp-content/uploads/2021/01/PATH-logo.png",
+  website: "https://www.path.org/"
+},
+{
+  name: "Mercy Corps",
+  description: "Mercy Corps is an international humanitarian organization founded in 1979 that supports communities affected by crisis, conflict, and climate change in more than 35 countries. The organization provides emergency aid and builds long-term resilience through programs in food security, economic opportunity, water access, health, and youth empowerment.",
+  image: "https://www.mercycorps.org/sites/default/files/2023-05/MC-logo-blue.svg",
+  website: "https://www.mercycorps.org/"
+},
+{
+  name: "Action Against Hunger",
+  description: "Action Against Hunger (Action contre la Faim / ACF International) is a global humanitarian organization established in 1979, focused on ending child hunger by treating malnutrition and providing access to safe water, food security solutions, and sanitation. Operating in over 50 countries, ACF serves millions annually and advocates for long-term resilience and nutrition justice.",
+  image: "https://www.actionagainsthunger.org/themes/custom/acf/logo.svg",
+  website: "https://www.actionagainsthunger.org/"
+},
+{
+  name: "Rise Against Hunger",
+  description: "Rise Against Hunger is a global hunger relief nonprofit founded in 1998 (formerly Stop Hunger Now) that mobilizes volunteers to package and distribute meals and nutritional aid in support of vulnerable communities. Operating in over 70 countries, the organization also delivers agricultural training, clean water projects, and emergency relief to foster sustainable food security.",
+  image: "https://riseagainsthunger.org/wp-content/uploads/2022/06/logo-RAH.svg",
+  website: "https://riseagainsthunger.org/"
+},
+{
+  name: "International Medical Corps",
+  description: "International Medical Corps provides emergency medical services, health training, and capacity-building in conflict and disaster zones worldwide. Its mission includes establishing sustainable healthcare infrastructure and delivering mental health support, long-term recovery, and public health programming in some of the world’s most complex humanitarian environments.",
+  image: "https://internationalmedicalcorps.org/wp-content/themes/imc/images/logo.svg",
+  website: "https://internationalmedicalcorps.org/"
+},
+{
+  name: "Asia Foundation",
+  description: "The Asia Foundation is a nonprofit focused on governance, women’s empowerment, education, and economic development across Asia and the Pacific. Through long-term regional presence, the organization cultivates inclusive leadership and policy reform, advancing climate resilience, civil society capacity, and human rights in partner countries.",
+  image: "https://asiafoundation.org/wp-content/themes/asiafoundation/images/asia-foundation-logo.svg",
+  website: "https://asiafoundation.org/"
+},
+{
+  name: "International Orthodox Christian Charities (IOCC)",
+  description: "IOCC delivers humanitarian relief and sustainable development assistance across more than 60 countries, including clean water, healthcare, emergency response, and economic livelihood programs. Allocating aid based solely on need, it maintains high transparency and partners with local faith-based and secular groups to maximize reach and impact.",
+  image: "https://iocc.org/wp-content/uploads/2024/01/iocc-logo.svg",
+  website: "https://iocc.org/"
+},
+{
+  name: "Malaria Consortium",
+  description: "Malaria Consortium focuses on preventing and treating malaria and other communicable diseases affecting children under five in Africa and Asia. Through collaboration with governments and health agencies, it supports large-scale distribution of interventions such as seasonal malaria chemoprevention, diagnostics, and public health strategies.",
+  image: "https://www.malariaconsortium.org/assets/images/logo/MC_logo.svg",
+  website: "https://www.malariaconsortium.org/"
+},
+{
+  name: "SAPA (Sudanese American Physicians’ Association)",
+  description: "SAPA is a nonprofit medical organization providing vital healthcare services—from surgery to maternal and pediatric care—in Sudan. Operating clinics and hospitals amidst humanitarian crisis, SAPA partners with organizations like UNICEF to reach internally displaced populations and strengthen local medical infrastructure.",
+  image: "https://sapa.org/logo.png",
+  website: "https://sapa.org/"
+},
+  {
     name: "The Brain Tumor Charity",
     description: "The Brain Tumor Charity works on funding research for brain tumors and spreading stories of brain cancer survivors and victims.",
     website: "https://www.thebraintumourcharity.org/about-us/",
