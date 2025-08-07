@@ -2,61 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Charity Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity Finder</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <div class="container">
     <h1>Charity Finder</h1>
     <input type="text" id="searchInput" placeholder="Search charities..." oninput="handleSearch()" />
-    <div class="charity-list" id="charityList"></div>
+    <div id="charityList" class="charity-list"></div>
   </div>
 
   <script>
-    let allCharities = [];
+    let charities = [];
 
-    async function loadDatabase() {
+    async function loadCharities() {
       try {
         const res = await fetch('database.json');
-        allCharities = await res.json();
-        displayCharities(allCharities);
-      } catch (e) {
+        charities = await res.json();
+        display(charities);
+      } catch {
         document.getElementById('charityList').innerHTML = '<p>Error loading database.</p>';
       }
     }
 
     function handleSearch() {
-      const q = document.getElementById('searchInput').value.trim().toLowerCase();
-      const filtered = allCharities.filter(c =>
-        c.name.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = charities.filter(c =>
+        c.name.toLowerCase().includes(q) ||
+        c.description.toLowerCase().includes(q)
       );
-      displayCharities(filtered);
+      display(filtered);
     }
 
-    function displayCharities(charities) {
-      const list = document.getElementById('charityList');
-      list.innerHTML = '';
-      if (charities.length === 0) {
-        list.innerHTML = '<p>No charities found.</p>';
+    function display(list) {
+      const out = document.getElementById('charityList');
+      out.innerHTML = '';
+      if (list.length === 0) {
+        out.innerHTML = '<p>No results found.</p>';
         return;
       }
-      charities.forEach(c => {
-        const item = document.createElement('div');
-        item.className = 'charity-item';
-        item.innerHTML = `
-          <img src="${c.image}" alt="${c.name}" />
+
+      list.forEach(c => {
+        const el = document.createElement('div');
+        el.className = 'charity-item';
+        el.innerHTML = `
+          <img src="${c.image}" alt="${c.name}">
           <h3>${c.name}</h3>
           <p>${c.description}</p>
           <a href="${c.website}" target="_blank">Visit Website</a>
         `;
-        list.appendChild(item);
+        out.appendChild(el);
       });
     }
 
-    window.onload = loadDatabase;
+    window.onload = loadCharities;
   </script>
-
 </body>
 </html>
