@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Charity Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <style>
     * {
       box-sizing: border-box;
@@ -23,13 +24,19 @@
     nav {
       background: #1d4ed8;
       padding: 16px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
       position: sticky;
       top: 0;
       z-index: 999;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
     }
 
     nav a {
@@ -154,37 +161,19 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .charity-card {
-        padding: 20px;
-      }
-
-      .container {
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      #searchInput {
-        font-size: 15px;
-      }
-    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html" class="active">Search</a>
-    <a href="about.html">About Us</a>
-    <a href="donate.html">Donate</a>
-    <a href="other.html">Other</a>
+    <div class="nav-container">
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <div class="nav-links side-menu">
+        <a href="index.html" class="active">Search</a>
+        <a href="about.html">About Us</a>
+        <a href="donate.html">Donate</a>
+        <a href="other.html">Other</a>
+      </div>
+    </div>
   </nav>
 
   <div class="container">
@@ -226,6 +215,19 @@
     });
 
     displayCharities(charities);
+
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      sideMenu.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.side-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        sideMenu.classList.remove('open');
+      });
+    });
   </script>
 </body>
 </html>
