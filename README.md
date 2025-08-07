@@ -16,8 +16,11 @@ Its goal is to help users **easily find the right charity** to support by provid
 
 - Live search filtering  
 - Clean, responsive UI  
-- Basic charity database
+- Charity database
 
-## Note
 
-This project is purely educational and non-commercial.
+
+
+
+
+
