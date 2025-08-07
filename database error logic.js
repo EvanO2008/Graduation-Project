@@ -22,6 +22,7 @@ let history = '';
 const predictions = {};
 
 
+Charties Backup: -------------------
 
 const charities = [
   {
