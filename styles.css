@@ -1,22 +1,19 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   background: #f4f4f9;
   color: #333;
 }
-
 .container {
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
   text-align: center;
 }
-
 h1 {
   margin-bottom: 20px;
   color: #2c3e50;
 }
-
 input[type="text"] {
   padding: 12px 15px;
   width: 60%;
@@ -26,51 +23,44 @@ input[type="text"] {
   font-size: 16px;
   margin-bottom: 30px;
 }
-
 .charity-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 .charity-item {
   background: white;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   width: 280px;
   padding: 20px;
   text-align: center;
 }
-
 .charity-item img {
   width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
   height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
 }
-
 .charity-item h3 {
   margin: 15px 0 10px;
   color: #2c3e50;
 }
-
 .charity-item p {
   font-size: 14px;
   color: #555;
 }
-
 .charity-item a {
   display: inline-block;
   margin-top: 12px;
-  text-decoration: none;
-  color: #fff;
   background: #0077cc;
+  color: #fff;
   padding: 10px 16px;
   border-radius: 5px;
+  text-decoration: none;
   transition: background 0.3s;
 }
-
 .charity-item a:hover {
   background: #005fa3;
 }
