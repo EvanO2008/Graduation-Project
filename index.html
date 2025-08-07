@@ -32,6 +32,32 @@
         button:hover {
             background-color: #218838;
         }
+        .charity-list {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .charity-item {
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .charity-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .charity-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .charity-item p {
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -39,20 +65,64 @@
     <div class="search-container">
         <h1>Charity Search</h1>
         <form id="searchForm" onsubmit="handleSearch(event)">
-            <input type="text" id="searchInput" placeholder="Search for charities or issues..." required>
+            <input type="text" id="searchInput" placeholder="Search for charities..." required>
             <button type="submit">Search</button>
         </form>
     </div>
 
+    <div class="charity-list" id="charityList"></div>
+
     <script>
+        const charities = [
+            {
+                name: 'Name',
+                description: 'Description',
+                image: 'image url',
+                link: 'link to website'
+            },
+            {
+                name: 'Red Cross',
+                description: 'Providing emergency assistance and disaster relief worldwide.',
+                image: 'images/red-cross.jpg',
+                link: 'about.html?charity=red-cross'
+            },
+            {
+                name: 'World Wildlife Fund',
+                description: 'A global organization focused on conservation and protecting wildlife.',
+                image: 'images/wwf.jpg',
+                link: 'about.html?charity=world-wildlife-fund'
+            },
+            {
+                name: 'Habitat for Humanity',
+                description: 'Building homes and communities for families in need.',
+                image: 'images/habitat-for-humanity.jpg',
+                link: 'about.html?charity=habitat-for-humanity'
+            }
+        ];
+
         function handleSearch(event) {
             event.preventDefault();
             const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
-            if (searchQuery) {
-                window.location.href = `about.html?q=${encodeURIComponent(searchQuery)}`;
-            }
-        }
-    </script>
+            const filteredCharities = charities.filter(charity => 
+                charity.name.toLowerCase().includes(searchQuery) || 
+                charity.description.toLowerCase().includes(searchQuery)
+            );
 
-</body>
-</html>
+            displayCharities(filteredCharities);
+        }
+
+        function displayCharities(filteredCharities) {
+            const charityList = document.getElementById('charityList');
+            charityList.innerHTML = '';
+
+            if (filteredCharities.length > 0) {
+                filteredCharities.forEach(charity => {
+                    const charityItem = document.createElement('div');
+                    charityItem.className = 'charity-item';
+
+                    charityItem.innerHTML = `
+                        <img src="${charity.image}" alt="${charity.name}">
+                        <h3>${charity.name}</h3>
+                        <p>${charity.description}</p>
+                        <a href="${charity.link}">Learn More</a>
+                    `;
