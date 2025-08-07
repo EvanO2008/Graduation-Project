@@ -1,6 +1,5 @@
 /* not for index */
 
-/* Reset & base */
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +8,91 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
-  color: #1f2937;
-  padding: 0;
+  background: linear-gradient(to bottom right, #f0f4f8, #e2e8f0);
+  color: #1e293b;
   min-height: 100vh;
 }
 
-/* Navbar */
 nav {
-  background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 18px 32px;
+  background: #1d4ed8;
+  padding: 16px 20px;
   display: flex;
- 
+  justify-content: center;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: #c7d2fe;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
