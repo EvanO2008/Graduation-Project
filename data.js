@@ -222,9 +222,129 @@ const charities = [
     keywords: ["education", "children", "teaching", "community", "opportunities"]
   },
   {
-    name: "National Wildlife Federation",
-    description: "Works to protect wildlife and wild places across the U.S.",
-    website: "https://www.nwf.org",
-    keywords: ["wildlife", "conservation", "environment", "nature", "animals"]
+    name: "American Cancer Society",
+    description: "Fights cancer through research, advocacy, and patient support.",
+    website: "https://www.cancer.org",
+    keywords: ["cancer", "research", "health", "support", "advocacy"]
+  },
+  {
+    name: "World Wildlife Fund",
+    description: "Dedicated to the conservation of nature and the protection of wildlife.",
+    website: "https://www.worldwildlife.org",
+    keywords: ["wildlife", "conservation", "nature", "environment", "animals"]
+  },
+  {
+    name: "Feeding America",
+    description: "National network of food banks working to fight hunger in the United States.",
+    website: "https://www.feedingamerica.org",
+    keywords: ["hunger", "food", "america", "relief", "meals"]
+  },
+  {
+    name: "Doctors Without Borders",
+    description: "Provides medical care to people affected by conflict, epidemics, disasters, or exclusion from healthcare.",
+    website: "https://www.doctorswithoutborders.org",
+    keywords: ["healthcare", "medical", "disasters", "global", "emergency"]
+  },
+  {
+    name: "Pencils of Promise",
+    description: "Building schools and increasing educational opportunities in the developing world.",
+    website: "https://pencilsofpromise.org/",
+    keywords: ["education", "schools", "children", "global"]
+  },
+  {
+    name: "The Nature Conservancy",
+    description: "Works to protect the lands and waters on which all life depends.",
+    website: "https://www.nature.org",
+    keywords: ["nature", "conservation", "environment", "land", "water"]
+  },
+  {
+    name: "Save the Children",
+    description: "Provides children in need with education, health care, and emergency relief.",
+    website: "https://www.savethechildren.org",
+    keywords: ["children", "education", "health", "emergency", "global"]
+  },
+  {
+    name: "United Nations Children's Fund (UNICEF)",
+    description: "Works to improve the lives of children around the world by providing emergency relief, education, and nutrition.",
+    website: "https://www.unicef.org",
+    keywords: ["children", "education", "emergency", "global", "nutrition"]
+  },
+  {
+    name: "The Trevor Project",
+    description: "Provides suicide prevention and crisis intervention services to LGBTQ youth.",
+    website: "https://www.thetrevorproject.org",
+    keywords: ["LGBTQ", "youth", "suicide prevention", "support", "mental health"]
+  },
+  {
+    name: "Habitat for Humanity",
+    description: "Helps build homes and communities for people in need of safe and affordable housing.",
+    website: "https://www.habitat.org",
+    keywords: ["housing", "community", "construction", "home", "affordable"]
+  },
+  {
+    name: "Make-A-Wish Foundation",
+    description: "Grants the wishes of children with life-threatening medical conditions.",
+    website: "https://www.wish.org",
+    keywords: ["children", "wish", "disease", "cancer", "hope"]
+  },
+  {
+    name: "The Humane Society of the United States",
+    description: "Works to prevent animal cruelty and promote animal welfare.",
+    website: "https://www.humanesociety.org",
+    keywords: ["animal", "welfare", "cruelty", "protection", "rescue"]
+  },
+  {
+    name: "The Brain Tumor Charity",
+    description: "Funds research for brain tumors and supports patients and survivors.",
+    website: "https://www.thebraintumourcharity.org/about-us/",
+    keywords: ["brain", "cancer", "research", "health"]
+  },
+  {
+    name: "The American Diabetes Association",
+    description: "Prevents and cures diabetes and improves the lives of those affected by diabetes.",
+    website: "https://www.diabetes.org",
+    keywords: ["diabetes", "health", "research", "cure", "prevention"]
+  },
+  {
+    name: "Wounded Warrior Project",
+    description: "Provides services to veterans who have incurred physical or mental injuries.",
+    website: "https://www.woundedwarriorproject.org",
+    keywords: ["veterans", "injuries", "support", "mental health", "care"]
+  },
+  {
+    name: "Alzheimer's Association",
+    description: "Leads the fight to end Alzheimer's and all other dementia.",
+    website: "https://www.alz.org",
+    keywords: ["Alzheimer's", "dementia", "health", "research", "support"]
+  },
+  {
+    name: "GlobalGiving",
+    description: "Connects nonprofits, donors, and companies to help communities thrive.",
+    website: "https://www.globalgiving.org",
+    keywords: ["donate", "global", "community", "support", "nonprofit"]
+  },
+  {
+    name: "Operation Smile",
+    description: "Provides free reconstructive surgery to children with cleft lips and palates.",
+    website: "https://www.operationsmile.org",
+    keywords: ["children", "surgery", "health", "global", "cleft lip"]
+  },
+  {
+    name: "Lions Clubs International",
+    description: "Provides humanitarian services, promotes peace, and supports community development.",
+    website: "https://www.lionsclubs.org",
+    keywords: ["humanitarian", "community", "peace", "development", "service"]
+  },
+  {
+    name: "Teach for America",
+    description: "Expands educational opportunities for children in underserved communities.",
+    website: "https://www.teachforamerica.org",
+    keywords: ["education", "children", "teaching", "community", "opportunities"]
+  },
+  {
+    name: "Covenant House",
+    description: "Provides shelter, food, and services for homeless youth.",
+    website: "https://www.covenanthouse.org",
+    keywords: ["homelessness", "youth", "shelter", "food", "services"]
   }
 ];
