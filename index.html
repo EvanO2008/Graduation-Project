@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Charity Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -24,12 +24,9 @@
       background: #1d4ed8;
       padding: 16px 20px;
       display: flex;
-      justify-content: center;
-      gap: 40px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     nav a {
@@ -60,18 +57,6 @@
 
     nav a:hover {
       color: #c7d2fe;
-    }
-
-    .menu-button {
-      display: none;
-      color: #fff;
-      background-color: #1d4ed8;
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
     }
 
     .container {
@@ -169,41 +154,28 @@
 
     @media (max-width: 600px) {
       nav {
-        display: none;
         flex-direction: column;
         gap: 12px;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        width: 250px;
-        height: 100%;
-        background-color: #1d4ed8;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: left 0.3s ease-in-out;
+        padding: 16px;
       }
 
-      nav.active {
-        left: 0;
+      nav .menu-toggle {
+        display: block;
+        background-color: #1d4ed8;
+        color: white;
+        font-size: 1.5rem;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
       }
 
       nav a {
-        text-align: center;
-        padding: 16px;
-        font-size: 1.2rem;
-        color: white;
+        display: none;
       }
 
-      nav .close-btn {
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: white;
-      }
-
-      .menu-button {
+      nav.open a {
         display: block;
+        margin: 12px 0;
       }
 
       .container {
@@ -221,13 +193,14 @@
   </style>
 </head>
 <body>
-  <button class="menu-button" id="menuButton">Charity Search</button>
-  <nav id="mobileNav">
-    <span class="close-btn" id="closeBtn">&times;</span>
-    <a href="index.html" class="active">Search</a>
-    <a href="about.html">About Us</a>
-    <a href="donate.html">Donate</a>
-    <a href="other.html">Other</a>
+  <nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Search</a>
+      <a href="about.html">About Us</a>
+      <a href="donate.html">Donate</a>
+      <a href="other.html">Other</a>
+    </div>
   </nav>
 
   <div class="container">
@@ -236,13 +209,15 @@
     <div id="charityList" class="charity-list"></div>
   </div>
 
-  <script src="data.js"></script>
   <script>
     const charityList = document.getElementById('charityList');
     const searchInput = document.getElementById('searchInput');
-    const menuButton = document.getElementById('menuButton');
-    const mobileNav = document.getElementById('mobileNav');
-    const closeBtn = document.getElementById('closeBtn');
+    const charities = [
+      { name: "American Red Cross", description: "Provides emergency assistance, disaster relief, and disaster preparedness education.", website: "https://www.redcross.org", keywords: ["blood", "disaster", "relief", "emergency", "donate"] },
+      { name: "Pencils of Promise", description: "Building schools and increasing educational opportunities in the developing world.", website: "https://pencilsofpromise.org/", keywords: ["education", "schools", "children", "global"] },
+      { name: "The Brain Tumor Charity", description: "Funds research for brain tumors and supports patients and survivors.", website: "https://www.thebraintumourcharity.org/about-us/", keywords: ["brain", "cancer", "research", "health"] },
+      { name: "Feeding America", description: "National network of food banks working to fight hunger in the United States.", website: "https://www.feedingamerica.org", keywords: ["hunger", "food", "america", "relief", "meals"] }
+    ];
 
     function displayCharities(filteredCharities) {
       charityList.innerHTML = '';
@@ -271,13 +246,10 @@
       displayCharities(filtered);
     });
 
-    menuButton.addEventListener('click', () => {
-      mobileNav.classList.add('active');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileNav.classList.remove('active');
-    });
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('open');
+    }
 
     displayCharities(charities);
   </script>
