@@ -20,20 +20,8 @@
             border: 2px solid #ccc;
             border-radius: 4px;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
         .charity-list {
-            margin-top: 30px;
+            margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -64,10 +52,7 @@
 
     <div class="search-container">
         <h1>Charity Search</h1>
-        <form id="searchForm" onsubmit="handleSearch(event)">
-            <input type="text" id="searchInput" placeholder="Search for charities..." required>
-            <button type="submit">Search</button>
-        </form>
+        <input type="text" id="searchInput" placeholder="Search for charities..." oninput="handleSearch()">
     </div>
 
     <div class="charity-list" id="charityList"></div>
@@ -75,39 +60,33 @@
     <script>
         const charities = [
             {
-                name: 'Name',
-                description: 'Description',
-                image: 'image url',
-                link: 'link to website'
+                name: 'Save the Children',
+                description: 'Providing education and relief to children in need worldwide.',
+                image: 'images/save-the-children.jpg'
             },
             {
                 name: 'Red Cross',
-                description: 'Providing emergency assistance and disaster relief worldwide.',
-                image: 'images/red-cross.jpg',
-                link: 'about.html?charity=red-cross'
+                description: 'Providing emergency assistance and disaster relief globally.',
+                image: 'images/red-cross.jpg'
             },
             {
                 name: 'World Wildlife Fund',
-                description: 'A global organization focused on conservation and protecting wildlife.',
-                image: 'images/wwf.jpg',
-                link: 'about.html?charity=world-wildlife-fund'
+                description: 'Conserving nature and reducing the most pressing threats to the diversity of life on Earth.',
+                image: 'images/wwf.jpg'
             },
             {
                 name: 'Habitat for Humanity',
-                description: 'Building homes and communities for families in need.',
-                image: 'images/habitat-for-humanity.jpg',
-                link: 'about.html?charity=habitat-for-humanity'
+                description: 'Helping families build and improve places they can call home.',
+                image: 'images/habitat-for-humanity.jpg'
             }
         ];
 
-        function handleSearch(event) {
-            event.preventDefault();
+        function handleSearch() {
             const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
             const filteredCharities = charities.filter(charity => 
                 charity.name.toLowerCase().includes(searchQuery) || 
                 charity.description.toLowerCase().includes(searchQuery)
             );
-
             displayCharities(filteredCharities);
         }
 
@@ -124,5 +103,14 @@
                         <img src="${charity.image}" alt="${charity.name}">
                         <h3>${charity.name}</h3>
                         <p>${charity.description}</p>
-                        <a href="${charity.link}">Learn More</a>
                     `;
+                    charityList.appendChild(charityItem);
+                });
+            } else {
+                charityList.innerHTML = '<p>No charities found for your search.</p>';
+            }
+        }
+    </script>
+
+</body>
+</html>
