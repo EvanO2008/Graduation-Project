@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Charity Search</title>
+  <title>Charity Finder</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,86 +14,128 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
-      padding: 20px;
+      background: linear-gradient(to bottom right, #f0f4f8, #dbeafe);
+      color: #1e293b;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    nav {
+      background: #1d4ed8;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      padding-bottom: 4px;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      left: 0;
+      bottom: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #c7d2fe;
     }
 
     .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
       background: white;
       border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
       animation: fadeIn 0.8s ease-in-out;
     }
 
     h1 {
       text-align: center;
-      font-size: 2.4rem;
-      color: #1f2937;
+      font-size: 2.5rem;
       margin-bottom: 30px;
+      color: #1e3a8a;
     }
 
     #searchInput {
       width: 100%;
-      padding: 14px 16px;
+      padding: 14px 18px;
       font-size: 16px;
-      border: 1px solid #d1d5db;
-      border-radius: 10px;
+      border: 2px solid #cbd5e1;
+      border-radius: 12px;
       margin-bottom: 30px;
-      transition: border 0.3s;
+      transition: border 0.3s, box-shadow 0.3s;
     }
 
     #searchInput:focus {
       outline: none;
       border-color: #3b82f6;
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+      box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
     }
 
     .charity-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 24px;
     }
 
     .charity-card {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-      padding: 20px;
+      background: #eff6ff;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: slideUp 0.6s ease forwards;
       opacity: 0;
-      display: flex;
-      flex-direction: column;
     }
 
     .charity-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
     }
 
     .charity-card h2 {
-      font-size: 1.2rem;
-      color: #111827;
+      font-size: 1.3rem;
+      color: #1e3a8a;
       margin-bottom: 10px;
     }
 
     .charity-card p {
       font-size: 0.95rem;
-      color: #4b5563;
-      margin-bottom: auto;
-      line-height: 1.4;
+      color: #334155;
+      margin-bottom: 16px;
+      line-height: 1.5;
     }
 
     .charity-card a {
-      margin-top: 16px;
-      text-align: center;
       background-color: #3b82f6;
       color: white;
       padding: 12px;
+      display: inline-block;
       border-radius: 8px;
+      text-align: center;
       text-decoration: none;
       font-weight: 600;
       transition: background 0.3s ease;
@@ -104,7 +146,7 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
@@ -114,34 +156,40 @@
     }
 
     @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .charity-card {
+        padding: 20px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
       h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       #searchInput {
         font-size: 15px;
-        padding: 12px;
-      }
-
-      .charity-card h2 {
-        font-size: 1rem;
-      }
-
-      .charity-card p {
-        font-size: 0.9rem;
-      }
-
-      .charity-card a {
-        padding: 10px;
-        font-size: 0.9rem;
       }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html" class="active">Search</a>
+    <a href="about.html">About Us</a>
+    <a href="donate.html">Donate</a>
+    <a href="other.html">Other</a>
+  </nav>
+
   <div class="container">
-    <h1>Charity Search</h1>
-    <input type="text" id="searchInput" placeholder="Search charities..." />
+    <h1>Find a Charity</h1>
+    <input type="text" id="searchInput" placeholder="Search by name, cause, or keywords..." />
     <div id="charityList" class="charity-list"></div>
   </div>
 
@@ -155,7 +203,7 @@
       filteredCharities.forEach((charity, index) => {
         const card = document.createElement('div');
         card.className = 'charity-card';
-        card.style.animationDelay = `${index * 100}ms`;
+        card.style.animationDelay = `${index * 80}ms`;
         card.innerHTML = `
           <div class="charity-card-content">
             <h2>${charity.name}</h2>
