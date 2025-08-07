@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Save the Children",
+    "description": "Providing education and relief to children in need worldwide.",
+    "image": "images/save-the-children.jpg",
+    "website": "https://www.savethechildren.org"
+  },
+  {
+    "name": "Red Cross",
+    "description": "Providing emergency assistance and disaster relief globally.",
+    "image": "images/red-cross.jpg",
+    "website": "https://www.redcross.org"
+  },
+  {
+    "name": "World Wildlife Fund",
+    "description": "Conserving nature and protecting wildlife globally.",
+    "image": "images/wwf.jpg",
+    "website": "https://www.worldwildlife.org"
+  },
+  {
+    "name": "Habitat for Humanity",
+    "description": "Helping families build and improve places they can call home.",
+    "image": "images/habitat-for-humanity.jpg",
+    "website": "https://www.habitat.org"
+  }
+]
