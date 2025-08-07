@@ -28,10 +28,10 @@
       padding: 30px;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
       animation: fadeIn 0.8s ease-in-out;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
       font-size: 2.5rem;
       margin-bottom: 20px;
       color: #1e3a8a;
@@ -42,6 +42,26 @@
       line-height: 1.7;
       color: #334155;
       margin-bottom: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(to right, #3b82f6, #6366f1);
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(99, 102, 241, 0.35);
     }
 
     @keyframes fadeIn {
@@ -56,6 +76,11 @@
 
       h1 {
         font-size: 2rem;
+      }
+
+      .button {
+        width: 100%;
+        padding: 14px 0;
       }
     }
   </style>
@@ -76,6 +101,8 @@
     <p>
       Explore our list of charities, find one that speaks to you, and take the first step in supporting a cause you believe in.
     </p>
+
+    <a href="search.html" class="button">Browse Charities to Donate</a>
   </div>
 
 </body>
