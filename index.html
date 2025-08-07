@@ -65,7 +65,7 @@
       background: white;
       border-radius: 16px;
       padding: 30px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
       animation: fadeIn 0.8s ease-in-out;
     }
 
@@ -96,14 +96,13 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 24px;
-      padding: 0 20px;
     }
 
     .charity-card {
       background: #eff6ff;
       border-radius: 14px;
       padding: 24px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       animation: slideUp 0.6s ease forwards;
       opacity: 0;
@@ -111,7 +110,7 @@
 
     .charity-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     }
 
     .charity-card h2 {
@@ -170,22 +169,13 @@
         cursor: pointer;
       }
 
-      nav .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        margin-top: 10px;
-      }
-
-      nav.open .nav-links {
-        display: flex;
-      }
-
       nav a {
+        display: none;
+      }
+
+      nav.open a {
         display: block;
-        padding: 10px 0;
-        text-align: center;
-        width: 100%;
+        margin: 12px 0;
       }
 
       .container {
@@ -198,25 +188,6 @@
 
       #searchInput {
         font-size: 15px;
-      }
-    }
-
-    @media (min-width: 601px) {
-      nav .menu-toggle {
-        display: none;
-      }
-
-      nav .nav-links {
-        display: flex;
-        gap: 20px;
-      }
-
-      nav {
-        justify-content: center;
-      }
-
-      nav a {
-        padding: 10px 20px;
       }
     }
   </style>
@@ -238,15 +209,10 @@
     <div id="charityList" class="charity-list"></div>
   </div>
 
+  <script src="data.js"></script>
   <script>
     const charityList = document.getElementById('charityList');
     const searchInput = document.getElementById('searchInput');
-    const charities = [
-      { name: "American Red Cross", description: "Provides emergency assistance, disaster relief, and disaster preparedness education.", website: "https://www.redcross.org", keywords: ["blood", "disaster", "relief", "emergency", "donate"] },
-      { name: "Pencils of Promise", description: "Building schools and increasing educational opportunities in the developing world.", website: "https://pencilsofpromise.org/", keywords: ["education", "schools", "children", "global"] },
-      { name: "The Brain Tumor Charity", description: "Funds research for brain tumors and supports patients and survivors.", website: "https://www.thebraintumourcharity.org/about-us/", keywords: ["brain", "cancer", "research", "health"] },
-      { name: "Feeding America", description: "National network of food banks working to fight hunger in the United States.", website: "https://www.feedingamerica.org", keywords: ["hunger", "food", "america", "relief", "meals"] }
-    ];
 
     function displayCharities(filteredCharities) {
       charityList.innerHTML = '';
@@ -275,12 +241,12 @@
       displayCharities(filtered);
     });
 
+    displayCharities(charities);
+
     function toggleMenu() {
       const nav = document.querySelector('nav');
       nav.classList.toggle('open');
     }
-
-    displayCharities(charities);
   </script>
 </body>
 </html>
