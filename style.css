@@ -1,0 +1,24 @@
+/* not for index */
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+  color: #1f2937;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 18px 32px;
+  display: flex;
+ 
