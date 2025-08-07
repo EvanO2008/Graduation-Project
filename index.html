@@ -1,158 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Search</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        .search-container {
-            text-align: center;
-        }
-        input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            width: 40%;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-        }
-        select {
-            padding: 10px;
-            font-size: 16px;
-            margin-left: 10px;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #218838;
-        }
-        .charity-list {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .charity-item {
-            width: 250px;
-            margin: 10px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .charity-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .charity-item h3 {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .charity-item p {
-            font-size: 14px;
-        }
-        .charity-item a {
-            display: block;
-            margin-top: 10px;
-            color: #007bff;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    .search-container {
+      text-align: center;
+    }
+    input[type="text"], select {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      margin: 5px;
+    }
+    .charity-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .charity-item {
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px;
+      text-align: center;
+    }
+    .charity-item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .charity-item h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .charity-item p {
+      font-size: 14px;
+    }
+    .charity-item a {
+      display: block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="search-container">
-        <h1>Charity Search</h1>
-        <input type="text" id="searchInput" placeholder="Search for charities..." oninput="handleSearch()">
-        <select id="searchSettings" onchange="handleSearch()">
-            <option value="both">Search by Name and Description</option>
-            <option value="name">Search by Name</option>
-            <option value="description">Search by Description</option>
-        </select>
-    </div>
+  <div class="search-container">
+    <h1>Charity Search</h1>
+    <input type="text" id="searchInput" placeholder="Search for charities..." oninput="handleSearch()" />
+    <select id="searchSettings" onchange="handleSearch()">
+      <option value="both">Search by Name and Description</option>
+      <option value="name">Search by Name</option>
+      <option value="description">Search by Description</option>
+    </select>
+  </div>
 
-    <div class="charity-list" id="charityList"></div>
+  <div class="charity-list" id="charityList"></div>
 
-    <script>
-        const charities = [
-            {
-                name: 'Save the Children',
-                description: 'Providing education and relief to children in need worldwide.',
-                image: 'images/save-the-children.jpg',
-                website: 'https://www.savethechildren.org'
-            },
-            {
-                name: 'Red Cross',
-                description: 'Providing emergency assistance and disaster relief globally.',
-                image: 'images/red-cross.jpg',
-                website: 'https://www.redcross.org'
-            },
-            {
-                name: 'World Wildlife Fund',
-                description: 'Conserving nature and reducing the most pressing threats to the diversity of life on Earth.',
-                image: 'images/wwf.jpg',
-                website: 'https://www.worldwildlife.org'
-            },
-            {
-                name: 'Habitat for Humanity',
-                description: 'Helping families build and improve places they can call home.',
-                image: 'images/habitat-for-humanity.jpg',
-                website: 'https://www.habitat.org'
-            }
-        ];
+  <script>
+    let allCharities = [];
 
-        function handleSearch() {
-            const searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
-            const searchSetting = document.getElementById('searchSettings').value;
-            const filteredCharities = charities.filter(charity => {
-                if (searchSetting === 'name') {
-                    return charity.name.toLowerCase().includes(searchQuery);
-                } else if (searchSetting === 'description') {
-                    return charity.description.toLowerCase().includes(searchQuery);
-                } else {
-                    return charity.name.toLowerCase().includes(searchQuery) || 
-                           charity.description.toLowerCase().includes(searchQuery);
-                }
-            });
-            displayCharities(filteredCharities);
-        }
+    async function loadDatabase() {
+      try {
+        const response = await fetch('database.json');
+        allCharities = await response.json();
+        displayCharities(allCharities);
+      } catch (error) {
+        document.getElementById('charityList').innerHTML = '<p>Error loading charity database.</p>';
+      }
+    }
 
-        function displayCharities(filteredCharities) {
-            const charityList = document.getElementById('charityList');
-            charityList.innerHTML = '';
+    function handleSearch() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      const setting = document.getElementById('searchSettings').value;
 
-            if (filteredCharities.length > 0) {
-                filteredCharities.forEach(charity => {
-                    const charityItem = document.createElement('div');
-                    charityItem.className = 'charity-item';
+      const filtered = allCharities.filter(charity => {
+        const name = charity.name.toLowerCase();
+        const description = charity.description.toLowerCase();
 
-                    charityItem.innerHTML = `
-                        <img src="${charity.image}" alt="${charity.name}">
-                        <h3>${charity.name}</h3>
-                        <p>${charity.description}</p>
-                        <a href="${charity.website}" target="_blank">Visit Website</a>
-                    `;
-                    charityList.appendChild(charityItem);
-                });
-            } else {
-                charityList.innerHTML = '<p>No charities found for your search.</p>';
-            }
-        }
-    </script>
+        if (setting === 'name') return name.includes(query);
+        if (setting === 'description') return description.includes(query);
+        return name.includes(query) || description.includes(query);
+      });
 
+      displayCharities(filtered);
+    }
+
+    function displayCharities(charities) {
+      const list = document.getElementById('charityList');
+      list.innerHTML = '';
+
+      if (charities.length === 0) {
+        list.innerHTML = '<p>No charities found.</p>';
+        return;
+      }
+
+      charities.forEach(charity => {
+        const item = document.createElement('div');
+        item.className = 'charity-item';
+
+        item.innerHTML = `
+          <img src="${charity.image}" alt="${charity.name}">
+          <h3>${charity.name}</h3>
+          <p>${charity.description}</p>
+          <a href="${charity.website}" target="_blank">Visit Website</a>
+        `;
+
+        list.appendChild(item);
+      });
+    }
+
+    window.onload = loadDatabase;
+  </script>
 </body>
 </html>
