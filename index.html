@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Charity Search</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -28,36 +28,29 @@
     }
 
     function handleSearch() {
-      const query = document.getElementById('searchInput').value.trim().toLowerCase();
-
-      const filtered = allCharities.filter(charity =>
-        charity.name.toLowerCase().includes(query) ||
-        charity.description.toLowerCase().includes(query)
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+      const filtered = allCharities.filter(c =>
+        c.name.toLowerCase().includes(q) || c.description.toLowerCase().includes(q)
       );
-
       displayCharities(filtered);
     }
 
     function displayCharities(charities) {
       const list = document.getElementById('charityList');
       list.innerHTML = '';
-
       if (charities.length === 0) {
         list.innerHTML = '<p>No charities found.</p>';
         return;
       }
-
-      charities.forEach(charity => {
+      charities.forEach(c => {
         const item = document.createElement('div');
         item.className = 'charity-item';
-
         item.innerHTML = `
-          <img src="${charity.image}" alt="${charity.name}" />
-          <h3>${charity.name}</h3>
-          <p>${charity.description}</p>
-          <a href="${charity.website}" target="_blank">Visit Website</a>
+          <img src="${c.image}" alt="${c.name}" />
+          <h3>${c.name}</h3>
+          <p>${c.description}</p>
+          <a href="${c.website}" target="_blank">Visit Website</a>
         `;
-
         list.appendChild(item);
       });
     }
