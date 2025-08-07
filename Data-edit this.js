@@ -263,14 +263,15 @@ const charities = [
 	image: "https://givedirectly.org/wp-content/uploads/2020/11/logo.svg",
 	website: "https://givedirectly.org/"
 },
-{
-	name: "Pencils of Promise",
-	description: "Building schools and increasing educational opportunities in the developing world.",
-	image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
-	website: "https://pencilsofpromise.org/"
-	}
-]; name: "The Brain Tumor Charity",
-    description: "The Brain Tumor Charity works on funding on reasearch for brain tumors and spreading stories of brain cancer survivors and victums.",
+  {
+    name: "Pencils of Promise",
+    description: "Building schools and increasing educational opportunities in the developing world.",
+    image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
+    website: "https://pencilsofpromise.org/"
+  },
+  {
+    name: "The Brain Tumor Charity",
+    description: "The Brain Tumor Charity works on funding research for brain tumors and spreading stories of brain cancer survivors and victims.",
     website: "https://www.thebraintumourcharity.org/about-us/",
     image: "https://www.example.org/image.jpg"
   },
@@ -279,3 +280,5 @@ const charities = [
     description: "The US hunger organization focusing on raising money to feed the hungry of the US working with all forms of food storage to provide food to the poor.",
     website: "https://www.feedingamerica.org",
     image: "https://www.another.org/image.jpg"
+  }
+];
