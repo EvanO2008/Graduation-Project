@@ -4210,5 +4210,305 @@ const charities = [
     description: "Works to stop seizures and sudden unexpected death in epilepsy (SUDEP), find a cure, and overcome the challenges created by epilepsy.",
     website: "https://www.epilepsy.com",
     keywords: ["epilepsy", "seizures", "health", "neurology"]
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
   }
 ];
