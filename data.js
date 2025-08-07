@@ -4212,6 +4212,66 @@ const charities = [
     keywords: ["epilepsy", "seizures", "health", "neurology"]
   },
   {
+    name: "NPower",
+    description: "Provides underserved young adults and military veterans with free IT training, professional certifications, and job placement support to build careers in tech.",
+    image: "https://www.npower.org/wp-content/uploads/2019/10/NPower-logo.png",
+    website: "https://www.npower.org/"
+  },
+  {
+    name: "Code.org",
+    description: "Expands access to computer science education in K–12 schools, with an emphasis on increasing participation by young women and students from underrepresented groups.",
+    image: "https://code.org/images/social-media/codeorg2021.jpg",
+    website: "https://code.org/"
+  },
+  {
+    name: "Girls Who Code",
+    description: "Works to close the gender gap in technology by offering clubs, summer programs, and college-level support for girls interested in coding and computer science.",
+    image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
+    website: "https://girlswhocode.com/"
+  },
+  {
+    name: "Black Girls Code",
+    description: "Empowers young Black girls by providing workshops and programs in programming, robotics, and game development to cultivate future leaders in tech.",
+    image: "https://www.blackgirlscode.com/uploads/1/2/0/6/120685453/bgc-logo-color_orig.png",
+    website: "https://www.blackgirlscode.com/"
+  },
+  {
+    name: "Hack the Hood",
+    description: "Trains low-income youth of color in web development and digital marketing to prepare them for tech careers and entrepreneurship.",
+    image: "https://www.hackthehood.org/uploads/1/2/2/7/122700268/published/ht-logo-png_2.png",
+    website: "https://www.hackthehood.org/"
+  },
+  {
+    name: "The Hidden Genius Project",
+    description: "Mentors Black male youth in technology creation, entrepreneurship, and leadership to transform their lives and communities.",
+    image: "https://www.hiddengeniusproject.org/wp-content/uploads/2019/10/logo.png",
+    website: "https://www.hiddengeniusproject.org/"
+  },
+  {
+    name: "Genesys Works",
+    description: "Connects high school students from underserved communities to paid internships and IT training in professional environments.",
+    image: "https://www.genesysworks.org/wp-content/uploads/2020/01/GW-HorzLogo-RGB.png",
+    website: "https://www.genesysworks.org/"
+  },
+  {
+    name: "TechGirlz",
+    description: "Inspires middle school girls to explore technology through free hands-on workshops and educational resources.",
+    image: "https://www.techgirlz.org/wp-content/uploads/2019/06/TechGirlzLogo-Large-1.png",
+    website: "https://www.techgirlz.org/"
+  },
+  {
+    name: "CodePath.org",
+    description: "Provides college students with free courses in computer science, mentorship, and career support to break into the tech industry.",
+    image: "https://codepath.org/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75",
+    website: "https://codepath.org/"
+  },
+  {
+    name: "American Telemedicine Association",
+    description: "Promotes the use of advanced telehealth technologies to improve access to quality healthcare services.",
+    image: "https://www.americantelemed.org/wp-content/uploads/2020/05/ATA_logo_transparent.png",
+    website: "https://www.americantelemed.org/"
+  },
+  {
     "name": "",
     "description": "",
     "website": "",
