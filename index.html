@@ -96,6 +96,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 24px;
+      padding: 0 20px;
     }
 
     .charity-card {
@@ -169,13 +170,22 @@
         cursor: pointer;
       }
 
-      nav a {
+      nav .nav-links {
         display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
       }
 
-      nav.open a {
+      nav.open .nav-links {
+        display: flex;
+      }
+
+      nav a {
         display: block;
-        margin: 12px 0;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
       }
 
       .container {
@@ -188,6 +198,25 @@
 
       #searchInput {
         font-size: 15px;
+      }
+    }
+
+    @media (min-width: 601px) {
+      nav .menu-toggle {
+        display: none;
+      }
+
+      nav .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      nav a {
+        padding: 10px 20px;
       }
     }
   </style>
