@@ -466,5 +466,29 @@ const charities = [
     description: "Provides life-saving programs to children in need worldwide.",
     website: "https://www.unicefusa.org",
     keywords: ["children", "education", "health", "emergency", "nutrition"]
+  },
+  {
+    name: "Action Against Hunger",
+    description: "Dedicated to ending world hunger through innovative, sustainable solutions.",
+    website: "https://www.actionagainsthunger.org",
+    keywords: ["hunger", "malnutrition", "water", "nutrition", "relief"]
+  },
+  {
+    name: "Amnesty International",
+    description: "Fights for human rights and justice worldwide.",
+    website: "https://www.amnesty.org",
+    keywords: ["human rights", "justice", "advocacy", "global", "peace"]
+  },
+ {
+    name: "Clean Water Action",
+    description: "Works to ensure everyone has access to clean water and a healthy environment.",
+    website: "https://www.cleanwateraction.org",
+    keywords: ["water", "environment", "health", "conservation", "clean"]
+  },
+  {
+    name: "Word",
+    description: "description",
+    website: "https://www.url.com",
+    keywords: ["word", "word", "word", "word", "word"]
   }
 ];
