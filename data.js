@@ -262,6 +262,11 @@ const charities = [
 	description: "Delivering unconditional cash transfers directly to people living in poverty, empowering them to choose how best to improve their lives.",
 	image: "https://givedirectly.org/wp-content/uploads/2020/11/logo.svg",
 	website: "https://givedirectly.org/"
-}
+},
+{
+	name: "Pencils of Promise",
+	description: "Building schools and increasing educational opportunities in the developing world.",
+	image: "https://pencilsofpromise.org/wp-content/uploads/2021/07/pop-logo-gold.svg",
+	website: "https://pencilsofpromise.org/"
+	}
 ];
-
