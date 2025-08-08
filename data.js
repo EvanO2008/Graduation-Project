@@ -4391,4 +4391,664 @@ const charities = [
     image: "https://www.builtbygirls.com/images/logos/builtbygirls.svg",
     website: "https://www.builtbygirls.com/"
   },
+   {
+    name: "Direct Relief",
+    description: "Provides medical assistance to improve the health and lives of people affected by poverty and emergencies.",
+    keywords: ["health", "medical aid", "disaster relief", "emergency"],
+    website: "https://www.directrelief.org"
+  },
+  {
+    name: "International Red Cross and Red Crescent Movement",
+    description: "Provides humanitarian help for people affected by conflict and disasters.",
+    keywords: ["humanitarian", "emergency", "disaster response", "aid"],
+    website: "https://www.ifrc.org"
+  },
+  {
+    name: "Room to Read",
+    description: "Focuses on literacy and gender equality in education across low-income countries.",
+    keywords: ["education", "literacy", "gender equality"],
+    website: "https://www.roomtoread.org"
+  },
+  {
+    name: "DonorsChoose",
+    description: "Connects public school teachers with donors to fund classroom projects.",
+    keywords: ["education", "schools", "teachers", "fundraising"],
+    website: "https://www.donorschoose.org"
+  },
+  {
+    name: "Rainforest Trust",
+    description: "Works to protect threatened tropical forests and endangered wildlife.",
+    keywords: ["environment", "conservation", "rainforest", "wildlife"],
+    website: "https://www.rainforesttrust.org"
+  },
+  {
+    name: "Malala Fund",
+    description: "Advocates for girls’ education worldwide.",
+    keywords: ["education", "girls", "advocacy"],
+    website: "https://www.malala.org"
+  },
+  {
+    name: "CARE",
+    description: "Fights global poverty and provides disaster relief.",
+    keywords: ["poverty", "disaster relief", "women"],
+    website: "https://www.care.org"
+  },
+  {
+    name: "International Medical Corps",
+    description: "Delivers emergency medical and related services to those affected by conflict, disaster, and disease.",
+    keywords: ["medical aid", "emergency", "health"],
+    website: "https://www.internationalmedicalcorps.org"
+  },
+  {
+    name: "Operation Smile",
+    description: "Provides free surgeries for children with cleft lips and palates.",
+    keywords: ["surgery", "children", "health"],
+    website: "https://www.operationsmile.org"
+  },
+  {
+    name: "Charity Navigator",
+    description: "Evaluates charities to help donors make informed decisions.",
+    keywords: ["charity", "nonprofit", "evaluation"],
+    website: "https://www.charitynavigator.org"
+  },
+  {
+    name: "Heifer International",
+    description: "Works to end hunger and poverty by providing livestock and training to struggling communities.",
+    keywords: ["poverty", "hunger", "livestock"],
+    website: "https://www.heifer.org"
+  },
+  {
+    name: "Doctors of the World",
+    description: "Provides medical care to vulnerable populations around the globe.",
+    keywords: ["health", "medical", "global"],
+    website: "https://www.doctorsoftheworld.org"
+  },
+  {
+    name: "Mercy Corps",
+    description: "Helps people in the world’s toughest places survive the crises they confront and turn them into opportunities for progress.",
+    keywords: ["poverty", "emergency", "development"],
+    website: "https://www.mercycorps.org"
+  },
+  {
+    name: "Kiva",
+    description: "Expands financial access to help underserved communities thrive.",
+    keywords: ["microloans", "finance", "development"],
+    website: "https://www.kiva.org"
+  },
+  {
+    name: "World Central Kitchen",
+    description: "Provides meals in response to humanitarian, climate, and community crises.",
+    keywords: ["food", "disaster relief", "humanitarian"],
+    website: "https://www.wck.org"
+  },
+  {
+    name: "The Water Project",
+    description: "Provides access to clean, safe, and reliable water across sub-Saharan Africa.",
+    keywords: ["water", "sanitation", "Africa"],
+    website: "https://www.thewaterproject.org"
+  },
+  {
+    name: "ShelterBox",
+    description: "Delivers emergency shelter and tools for families robbed of their homes by disaster.",
+    keywords: ["shelter", "disaster relief", "emergency"],
+    website: "https://www.shelterbox.org"
+  },
+  {
+    name: "GlobalGiving",
+    description: "Connects donors with grassroots projects around the world.",
+    keywords: ["donation", "crowdfunding", "projects"],
+    website: "https://www.globalgiving.org"
+  },
+  {
+    name: "Teach For All",
+    description: "A global network developing leadership to ensure all children can fulfill their potential.",
+    keywords: ["education", "leadership", "children"],
+    website: "https://www.teachforall.org"
+  },
+  {
+    name: "Plan International",
+    description: "Advances children’s rights and equality for girls.",
+    keywords: ["children", "girls", "rights"],
+    website: "https://www.plan-international.org"
+  },
+  {
+    name: "Action Against Hunger",
+    description: "Leads the global movement to end hunger.",
+    keywords: ["hunger", "nutrition", "food security"],
+    website: "https://www.actionagainsthunger.org"
+  },
+  {
+    name: "Save the Children",
+    description: "Provides children with health care, education, and protection from harm.",
+    keywords: ["children", "education", "health"],
+    website: "https://www.savethechildren.org"
+  },
+  {
+    name: "Amnesty International",
+    description: "Works to protect human rights worldwide.",
+    keywords: ["human rights", "advocacy", "justice"],
+    website: "https://www.amnesty.org"
+  },
+  {
+    name: "CARE Australia",
+    description: "Delivers emergency relief and development assistance to communities in need.",
+    keywords: ["aid", "development", "emergency"],
+    website: "https://www.care.org.au"
+  },
+  {
+    name: "Wildlife Conservation Society",
+    description: "Saves wildlife and wild places worldwide.",
+    keywords: ["wildlife", "conservation", "nature"],
+    website: "https://www.wcs.org"
+  },
+  {
+    name: "Defenders of Wildlife",
+    description: "Works to protect and restore wildlife and their habitats.",
+    keywords: ["wildlife", "habitat", "protection"],
+    website: "https://www.defenders.org"
+  },
+  {
+    name: "Oxfam",
+    description: "Works to end the injustices that cause poverty.",
+    keywords: ["poverty", "justice", "aid"],
+    website: "https://www.oxfam.org"
+  },
+  {
+    name: "Friends of the Earth",
+    description: "An international network campaigning for sustainable societies and environmental justice.",
+    keywords: ["environment", "justice", "sustainability"],
+    website: "https://www.foei.org"
+  },
+  {
+    name: "Human Rights Watch",
+    description: "Defends the rights of people worldwide.",
+    keywords: ["human rights", "advocacy", "justice"],
+    website: "https://www.hrw.org"
+  },
+  {
+    name: "Earthwatch",
+    description: "Connects people with scientists worldwide to conduct environmental research.",
+    keywords: ["environment", "research", "science"],
+    website: "https://www.earthwatch.org"
+  },
+  {
+    name: "Hearts to Homes",
+    description: "Assists young adults as they transition from foster care to independent living.",
+    keywords: ["foster care", "youth", "independence"],
+    website: "https://www.heartstohomes.org"
+  },
+  {
+    name: "The Ocean Cleanup",
+    description: "Develops advanced technologies to rid the oceans of plastic.",
+    keywords: ["oceans", "plastic", "cleanup"],
+    website: "https://www.theoceancleanup.com"
+  },
+  {
+    name: "SolarAid",
+    description: "Fights poverty and climate change by providing solar lights in Africa.",
+    keywords: ["solar", "Africa", "energy"],
+    website: "https://www.solar-aid.org"
+  },
+  {
+    name: "One Acre Fund",
+    description: "Supplies smallholder farmers with the financing and training they need.",
+    keywords: ["farmers", "agriculture", "training"],
+    website: "https://www.oneacrefund.org"
+  },
+  {
+    name: "Education Cannot Wait",
+    description: "Provides education in emergencies and protracted crises.",
+    keywords: ["education", "crisis", "emergency"],
+    website: "https://www.educationcannotwait.org"
+  },
+  {
+    name: "Hope for Haiti",
+    description: "Works to improve the quality of life for the Haitian people, especially children.",
+    keywords: ["Haiti", "children", "development"],
+    website: "https://www.hopeforhaiti.com"
+  },
+  {
+    name: "Ashoka",
+    description: "Supports social entrepreneurs with innovative solutions to the world’s most urgent social problems.",
+    keywords: ["innovation", "entrepreneurship", "social impact"],
+    website: "https://www.ashoka.org"
+  },
+  {
+    name: "Feeding America",
+    description: "A nationwide network of food banks feeding the hungry in the United States.",
+    keywords: ["food", "hunger", "United States"],
+    website: "https://www.feedingamerica.org"
+  },
+  {
+    name: "Lifewater International",
+    description: "Provides clean water, improved health, and hope to children and families living in extreme poverty.",
+    keywords: ["water", "health", "poverty"],
+    website: "https://www.lifewater.org"
+  },
+  {
+    name: "International Rescue Committee",
+    description: "Responds to the world’s worst humanitarian crises and helps people survive and rebuild their lives.",
+    keywords: ["crisis", "refugees", "humanitarian"],
+    website: "https://www.rescue.org"
+  },
+  {
+    name: "The Nature Conservancy",
+    description: "Works to conserve the lands and waters on which all life depends.",
+    keywords: ["conservation", "nature", "environment"],
+    website: "https://www.nature.org"
+  },
+  {
+    name: "Project HOPE",
+    description: "Provides medical training and health education, as well as humanitarian assistance.",
+    keywords: ["health", "education", "humanitarian"],
+    website: "https://www.projecthope.org"
+  },
+  {
+    name: "Charity: Water",
+    description: "Brings clean and safe drinking water to people in developing countries.",
+    keywords: ["water", "sanitation", "development"],
+    website: "https://www.charitywater.org"
+  },
+  {
+    name: "World Wildlife Fund",
+    description: "Works in the field of wilderness preservation and the reduction of human impact on the environment.",
+    keywords: ["wildlife", "environment", "conservation"],
+    website: "https://www.worldwildlife.org"
+  },
+  {
+    name: "Smile Train",
+    description: "Provides free cleft repair surgery and comprehensive cleft care.",
+    keywords: ["surgery", "cleft lip", "children"],
+    website: "https://www.smiletrain.org"
+  },
+  {
+    name: "The Trevor Project",
+    description: "Provides crisis intervention and suicide prevention services to LGBTQ youth.",
+    keywords: ["LGBTQ", "youth", "mental health"],
+    website: "https://www.thetrevorproject.org"
+  },
+  {
+    name: "Room to Grow",
+    description: "Supports parents and babies born into low-income circumstances.",
+    keywords: ["babies", "families", "support"],
+    website: "https://www.roomtogrow.org"
+  },
+  {
+    name: "Trees for the Future",
+    description: "Trains farmers in sustainable land use to help them grow vibrant economies, thriving food systems, and a healthier planet.",
+    keywords: ["trees", "farming", "sustainability"],
+    website: "https://www.trees.org"
+  },
+  {
+    name: "Books for Africa",
+    description: "Collects, sorts, ships, and distributes books to students of all ages in Africa.",
+    keywords: ["books", "Africa", "education"],
+    website: "https://www.booksforafrica.org"
+  },
+  {
+    name: "World Bicycle Relief",
+    description: "Mobilizes people through the power of bicycles.",
+    keywords: ["bicycles", "mobility", "development"],
+    website: "https://www.worldbicyclerelief.org"
+  },
+  {
+    name: "Charity Science Health",
+    description: "Works to improve health and save lives with cost-effective interventions.",
+    keywords: ["health", "interventions", "science"],
+    website: "https://www.charityscience.com"
+  },
+  {
+    name: "Against Malaria Foundation",
+    description: "Funds anti-malaria nets and ensures they reach the people who need them.",
+    keywords: ["malaria", "nets", "health"],
+    website: "https://www.againstmalaria.com"
+  },
+  {
+    name: "Helen Keller International",
+    description: "Dedicated to eliminating preventable vision loss, malnutrition, and diseases.",
+    keywords: ["vision", "health", "nutrition"],
+    website: "https://www.hki.org"
+  },
+  {
+    name: "GiveDirectly",
+    description: "Delivers cash directly to people living in poverty.",
+    keywords: ["cash", "poverty", "direct aid"],
+    website: "https://www.givedirectly.org"
+  },
+  {
+    name: "MAP International",
+    description: "Provides medicines and health supplies to those in need worldwide.",
+    keywords: ["medicine", "health", "supplies"],
+    website: "https://www.map.org"
+  },
+  {
+    name: "The Fred Hollows Foundation",
+    description: "Works to end avoidable blindness.",
+    keywords: ["blindness", "vision", "health"],
+    website: "https://www.hollows.org"
+  },
+  {
+    name: "Seva Foundation",
+    description: "Restores sight and prevents blindness in developing countries.",
+    keywords: ["vision", "blindness", "global health"],
+    website: "https://www.seva.org"
+  },
+  {
+    name: "International Justice Mission",
+    description: "Protects people in poverty from violence.",
+    keywords: ["justice", "poverty", "violence"],
+    website: "https://www.ijm.org"
+  },
+  {
+    name: "RedR UK",
+    description: "Trains and supports aid workers to respond to global emergencies.",
+    keywords: ["aid", "training", "emergency"],
+    website: "https://www.redr.org.uk"
+  },
+  {
+    name: "WaterAid",
+    description: "Works to make clean water, decent toilets, and good hygiene normal for everyone, everywhere.",
+    keywords: ["water", "hygiene", "sanitation"],
+    website: "https://www.wateraid.org"
+  },
+  {
+    name: "Global Fund for Women",
+    description: "Champions gender equality and human rights of women and girls.",
+    keywords: ["women", "girls", "equality"],
+    website: "https://www.globalfundforwomen.org"
+  },
+  {
+    name: "The Hunger Project",
+    description: "Works to end hunger and poverty by pioneering sustainable, grassroots, women-centered strategies.",
+    keywords: ["hunger", "poverty", "women"],
+    website: "https://www.thp.org"
+  },
+  {
+    name: "Pratham",
+    description: "Improves education quality for underprivileged children in India.",
+    keywords: ["education", "children", "India"],
+    website: "https://www.pratham.org"
+  },
+  {
+    name: "Rainforest Alliance",
+    description: "Works to conserve biodiversity and ensure sustainable livelihoods.",
+    keywords: ["rainforest", "biodiversity", "sustainability"],
+    website: "https://www.rainforest-alliance.org"
+  },
+  {
+    name: "Conservation International",
+    description: "Empowers societies to responsibly care for nature, global biodiversity, and the well-being of people.",
+    keywords: ["conservation", "biodiversity", "nature"],
+    website: "https://www.conservation.org"
+  },
+  {
+    name: "Girls Who Code",
+    description: "Aims to close the gender gap in technology and engineering.",
+    keywords: ["girls", "coding", "STEM"],
+    website: "https://www.girlswhocode.com"
+  },
+  {
+    name: "UNICEF",
+    description: "Works in over 190 countries to save children’s lives and defend their rights.",
+    keywords: ["children", "rights", "health"],
+    website: "https://www.unicef.org"
+  },
+  {
+    name: "World Food Programme",
+    description: "Provides food assistance in emergencies and works to improve nutrition and build resilience.",
+    keywords: ["food", "nutrition", "emergency"],
+    website: "https://www.wfp.org"
+  },
+  {
+    name: "Rotary International",
+    description: "Brings together business and professional leaders to provide humanitarian service.",
+    keywords: ["service", "community", "humanitarian"],
+    website: "https://www.rotary.org"
+  },
+  {
+    name: "Médecins du Monde",
+    description: "Provides medical care to vulnerable populations in crisis situations.",
+    keywords: ["medical", "crisis", "health"],
+    website: "https://www.medecinsdumonde.org"
+  },
+  {
+    name: "African Wildlife Foundation",
+    description: "Focuses on wildlife conservation, land and habitat protection, and community empowerment.",
+    keywords: ["Africa", "wildlife", "conservation"],
+    website: "https://www.awf.org"
+  },
+  {
+    name: "GiveWell",
+    description: "Finds outstanding giving opportunities and publishes the full details of their analysis to help donors decide where to give.",
+    keywords: ["charity", "research", "giving"],
+    website: "https://www.givewell.org"
+  },
+  {
+    name: "BuildOn",
+    description: "Empowers youth in the US to transform their neighborhoods and the world through service.",
+    keywords: ["youth", "service", "education"],
+    website: "https://www.buildon.org"
+  },
+  {
+    name: "World Vision",
+    description: "A Christian humanitarian organization helping children, families, and their communities.",
+    keywords: ["children", "families", "Christian"],
+    website: "https://www.worldvision.org"
+  },
+  {
+    name: "Love146",
+    description: "Works to end child trafficking and exploitation.",
+    keywords: ["child trafficking", "protection", "human rights"],
+    website: "https://www.love146.org"
+  },
+  {
+    name: "The Borgen Project",
+    description: "Advocates for US foreign policy that fights global poverty.",
+    keywords: ["poverty", "advocacy", "policy"],
+    website: "https://www.borgenproject.org"
+  },
+  {
+    name: "World Animal Protection",
+    description: "Works to end the suffering of animals worldwide.",
+    keywords: ["animals", "protection", "welfare"],
+    website: "https://www.worldanimalprotection.org"
+  },
+  {
+    name: "The Innocence Project",
+    description: "Works to free the innocent, prevent wrongful convictions, and create fair, compassionate, and equitable systems of justice.",
+    keywords: ["justice", "law", "innocence"],
+    website: "https://www.innocenceproject.org"
+  },
+  {
+    name: "The Carter Center",
+    description: "Wages peace, fights disease, and builds hope around the world.",
+    keywords: ["peace", "disease", "hope"],
+    website: "https://www.cartercenter.org"
+  },
+  {
+    name: "International Fund for Animal Welfare",
+    description: "Rescues and protects animals around the world.",
+    keywords: ["animals", "rescue", "protection"],
+    website: "https://www.ifaw.org"
+  },
+  {
+    name: "Fairtrade International",
+    description: "Promotes fair trade standards and supports farmers and workers.",
+    keywords: ["fair trade", "farmers", "standards"],
+    website: "https://www.fairtrade.net"
+  },
+  {
+    name: "Women for Women International",
+    description: "Supports women survivors of war to rebuild their lives.",
+    keywords: ["women", "war", "support"],
+    website: "https://www.womenforwomen.org"
+  },
+  {
+    name: "Room to Read",
+    description: "Creates a world free from illiteracy and gender inequality.",
+    keywords: ["literacy", "gender equality", "education"],
+    website: "https://www.roomtoread.org"
+  },
+  {
+    name: "Pencils of Promise",
+    description: "Builds schools and increases educational opportunities in the developing world.",
+    keywords: ["schools", "education", "children"],
+    website: "https://www.pencilsofpromise.org"
+  },
+  {
+    name: "The Against Malaria Foundation",
+    description: "Funds anti-malaria nets and ensures they reach the people who need them.",
+    keywords: ["malaria", "nets", "health"],
+    website: "https://www.againstmalaria.com"
+  },
+  {
+    name: "Acumen",
+    description: "Invests in social enterprises, emerging leaders, and breakthrough ideas.",
+    keywords: ["investment", "social enterprise", "leadership"],
+    website: "https://www.acumen.org"
+  },
+  {
+    name: "Charity Science Health",
+    description: "Works to improve health and save lives with cost-effective interventions.",
+    keywords: ["health", "interventions", "evidence-based"],
+    website: "https://www.charityscience.com"
+  },
+  {
+    name: "Free the Children",
+    description: "Empowers young people to remove barriers to education and end child labor.",
+    keywords: ["children", "education", "empowerment"],
+    website: "https://www.freethechildren.com"
+  },
+  {
+    name: "GAVI, the Vaccine Alliance",
+    description: "Brings together public and private sectors to create equal access to new and underused vaccines.",
+    keywords: ["vaccines", "health", "access"],
+    website: "https://www.gavi.org"
+  },
+  {
+    name: "The Sierra Club Foundation",
+    description: "Promotes climate solutions, conservation, and movement building.",
+    keywords: ["climate", "conservation", "environment"],
+    website: "https://www.sierraclubfoundation.org"
+  },
+  {
+    name: "The Humane League",
+    description: "Works to end the abuse of animals raised for food.",
+    keywords: ["animals", "food", "welfare"],
+    website: "https://www.thehumaneleague.org"
+  },
+  {
+    name: "The International Rescue Committee",
+    description: "Helps people whose lives and livelihoods are shattered by conflict and disaster.",
+    keywords: ["refugees", "crisis", "recovery"],
+    website: "https://www.rescue.org"
+  },
+  {
+    name: "Doctors of the World",
+    description: "Provides healthcare to excluded people worldwide.",
+    keywords: ["healthcare", "excluded", "global"],
+    website: "https://www.doctorsoftheworld.org"
+  },
+  {
+    name: "CARE International",
+    description: "Fights global poverty and provides disaster relief.",
+    keywords: ["poverty", "disaster relief", "global"],
+    website: "https://www.care-international.org"
+  },
+  {
+    name: "EcoHealth Alliance",
+    description: "Works at the intersection of wildlife, ecosystems, and human health.",
+    keywords: ["wildlife", "ecosystems", "health"],
+    website: "https://www.ecohealthalliance.org"
+  },
+  {
+    name: "SightSavers",
+    description: "Works to eliminate avoidable blindness and promote equality for people with disabilities.",
+    keywords: ["blindness", "disabilities", "health"],
+    website: "https://www.sightsavers.org"
+  },
+  {
+    name: "Habitat for Humanity",
+    description: "Helps families build and improve places to call home.",
+    keywords: ["housing", "families", "community"],
+    website: "https://www.habitat.org"
+  },
+  {
+    name: "Handicap International",
+    description: "Supports people with disabilities and vulnerable populations.",
+    keywords: ["disabilities", "support", "vulnerable"],
+    website: "https://www.handicap-international.org"
+  },
+  {
+    name: "Give Kids The World Village",
+    description: "Provides weeklong, cost-free vacations to children with critical illnesses and their families.",
+    keywords: ["children", "illness", "vacation"],
+    website: "https://www.gktw.org"
+  },
+  {
+    name: "International Planned Parenthood Federation",
+    description: "Delivers sexual and reproductive health services worldwide.",
+    keywords: ["reproductive health", "sexual health", "global"],
+    website: "https://www.ippf.org"
+  },
+  {
+    name: "The Climate Reality Project",
+    description: "Mobilizes activists to work for climate solutions worldwide.",
+    keywords: ["climate", "activism", "solutions"],
+    website: "https://www.climaterealityproject.org"
+  },
+  {
+    name: "The Global Fund",
+    description: "Invests in the fight against AIDS, tuberculosis, and malaria.",
+    keywords: ["AIDS", "tuberculosis", "malaria"],
+    website: "https://www.theglobalfund.org"
+  },
+  {
+    name: "Charity Miles",
+    description: "Enables people to earn money for charity by walking, running, or biking.",
+    keywords: ["fitness", "fundraising", "charity"],
+    website: "https://www.charitymiles.org"
+  },
+  {
+    name: "Scholarship America",
+    description: "Helps students fulfill their college dreams.",
+    keywords: ["scholarships", "students", "education"],
+    website: "https://www.scholarshipamerica.org"
+  },
+  {
+    name: "The Life You Can Save",
+    description: "Recommends highly effective charities that save or improve lives.",
+    keywords: ["charity", "effective", "lives"],
+    website: "https://www.thelifeyoucansave.org"
+  },
+  {
+    name: "International Literacy Association",
+    description: "Promotes literacy worldwide by improving reading instruction.",
+    keywords: ["literacy", "reading", "education"],
+    website: "https://www.literacyworldwide.org"
+  },
+  {
+    name: "UNHCR",
+    description: "Protects and assists refugees around the world.",
+    keywords: ["refugees", "protection", "relief"],
+    website: "https://www.unhcr.org"
+  },
+  {
+    name: "Hearts & Homes for Youth",
+    description: "Serves vulnerable youth through residential and community-based programs.",
+    keywords: ["youth", "residential", "community"],
+    website: "https://www.heartsandhomes.org"
+  },
+  {
+    name: "One Laptop per Child",
+    description: "Provides affordable educational devices to children worldwide.",
+    keywords: ["technology", "children", "education"],
+    website: "https://www.laptop.org"
+  },
+  {
+    name: "No Kid Hungry",
+    description: "Works to end child hunger in America.",
+    keywords: ["children", "hunger", "America"],
+    website: "https://www.nokidhungry.org"
+  },
 
