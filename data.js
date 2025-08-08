@@ -5961,19 +5961,19 @@ const charities = [
     "name": "Wounded Warrior Project",
     "description": "Raises money to help support US veternans who suffer from PTSD and their families",
     "website": "https://support.woundedwarriorproject.org/Default.aspx?tsid=11585&ovr_acv_id=11898&campaignsource=ONLINE&source=BS25009AAANBHAA&gclsrc=aw.ds&gad_source=1&gad_campaignid=1536334488&gbraid=0AAAAADg1Wjq-aZRCSJAuX_fKZ-qvARGXA&gclid=Cj0KCQjwndHEBhDVARIsAGh0g3B9sigR0QZHZ6gW9cmjNr6gvtYWq0rNEZ_4hOlCQa6XnHqILvZ1a9QaAn0-EALw_wcB",
-    "keywords": [PTSD]
+    "keywords": ["PTSD"]
   },
   {
     "name": "Human Rights Watch",
     "description": "Helps spread the awarness of Tyranny and empower viticms",
     "website": "https://donate.hrw.org/page/107245/donate/1?ea.tracking.id=geo",
-    "keywords": [Rights]
+    "keywords": ["Rights"]
   },
   {
     "name": "PTSD Foundation of America",
     "description": "Provides services, programs and support to veterans who suffer from trauma daily",
     "website": "https://ptsdusa.org",
-    "keywords": [PTSD]
+    "keywords": ["PTSD"]
   },
   {
     "name": "",
