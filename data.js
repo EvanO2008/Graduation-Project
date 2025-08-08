@@ -4691,5 +4691,77 @@ const charities = [
     "description": "",
     "website": "",
     "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
+  },
+  {
+    "name": "",
+    "description": "",
+    "website": "",
+    "keywords": []
   }
 ];
