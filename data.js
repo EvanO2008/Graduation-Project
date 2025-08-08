@@ -4212,185 +4212,229 @@ const charities = [
     keywords: ["epilepsy", "seizures", "health", "neurology"]
   },
   {
-    name: "NPower",
-    description: "Provides underserved young adults and military veterans with free IT training, professional certifications, and job placement support to build careers in tech.",
-    image: "https://www.npower.org/wp-content/uploads/2019/10/NPower-logo.png",
-    website: "https://www.npower.org/"
-  },
-  {
-    name: "Code.org",
-    description: "Expands access to computer science education in K–12 schools, with an emphasis on increasing participation by young women and students from underrepresented groups.",
-    image: "https://code.org/images/social-media/codeorg2021.jpg",
-    website: "https://code.org/"
-  },
-  {
-    name: "Girls Who Code",
-    description: "Works to close the gender gap in technology by offering clubs, summer programs, and college-level support for girls interested in coding and computer science.",
-    image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
-    website: "https://girlswhocode.com/"
-  },
-  {
-    name: "Black Girls Code",
-    description: "Empowers young Black girls by providing workshops and programs in programming, robotics, and game development to cultivate future leaders in tech.",
-    image: "https://www.blackgirlscode.com/uploads/1/2/0/6/120685453/bgc-logo-color_orig.png",
-    website: "https://www.blackgirlscode.com/"
-  },
-  {
-    name: "Hack the Hood",
-    description: "Trains low-income youth of color in web development and digital marketing to prepare them for tech careers and entrepreneurship.",
-    image: "https://www.hackthehood.org/uploads/1/2/2/7/122700268/published/ht-logo-png_2.png",
-    website: "https://www.hackthehood.org/"
-  },
-  {
-    name: "The Hidden Genius Project",
-    description: "Mentors Black male youth in technology creation, entrepreneurship, and leadership to transform their lives and communities.",
-    image: "https://www.hiddengeniusproject.org/wp-content/uploads/2019/10/logo.png",
-    website: "https://www.hiddengeniusproject.org/"
-  },
-  {
-    name: "Genesys Works",
-    description: "Connects high school students from underserved communities to paid internships and IT training in professional environments.",
-    image: "https://www.genesysworks.org/wp-content/uploads/2020/01/GW-HorzLogo-RGB.png",
-    website: "https://www.genesysworks.org/"
-  },
-  {
-    name: "TechGirlz",
-    description: "Inspires middle school girls to explore technology through free hands-on workshops and educational resources.",
-    image: "https://www.techgirlz.org/wp-content/uploads/2019/06/TechGirlzLogo-Large-1.png",
-    website: "https://www.techgirlz.org/"
-  },
-  {
-    name: "CodePath.org",
-    description: "Provides college students with free courses in computer science, mentorship, and career support to break into the tech industry.",
-    image: "https://codepath.org/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75",
-    website: "https://codepath.org/"
-  },
-  {
-    name: "American Telemedicine Association",
-    description: "Promotes the use of advanced telehealth technologies to improve access to quality healthcare services.",
-    image: "https://www.americantelemed.org/wp-content/uploads/2020/05/ATA_logo_transparent.png",
-    website: "https://www.americantelemed.org/"
-  },
-  {
-    name: "Per Scholas",
-    description: "Offers free, rigorous IT job training to individuals in underserved communities, helping them launch successful careers in technology.",
-    image: "https://perscholas.org/wp-content/themes/perscholas/assets/images/logo.png",
-    website: "https://www.perscholas.org/"
-  },
-  {
-    name: "All Star Code",
-    description: "Prepares young men of color for careers in tech by providing mentorship, industry exposure, and intensive coding training.",
-    image: "https://allstarcode.org/wp-content/uploads/2021/05/logo.png",
-    website: "https://allstarcode.org/"
-  },
-  {
-    name: "Digital NEST",
-    description: "Provides youth in underserved rural communities with access to technology, mentorship, and skills to pursue tech careers.",
-    image: "https://digitalnest.org/wp-content/uploads/2020/10/digital-nest-logo.svg",
-    website: "https://digitalnest.org/"
-  },
-  {
-    name: "Resilient Coders",
-    description: "Teaches young people from underserved communities how to code and supports them into high-growth tech jobs.",
-    image: "https://resilientcoders.org/images/logo-black.png",
-    website: "https://resilientcoders.org/"
-  },
-  {
-    name: "CareerFoundry Scholarships",
-    description: "Provides scholarships and bootcamp programs to help diverse and low-income students transition into tech careers.",
-    image: "https://careerfoundry.com/assets/logos/logo-black.svg",
-    website: "https://careerfoundry.com/"
-  },
-  {
-    name: "StackUp",
-    description: "Supports veterans and active duty military through gaming-based mental health programs and tech industry exposure.",
-    image: "https://stackup.org/wp-content/uploads/2020/11/stack-up-logo-red.png",
-    website: "https://stackup.org/"
-  },
-  {
-    name: "OpenDoors Academy",
-    description: "Supports middle and high school students in under-resourced communities through education and career readiness programs, including tech skills.",
-    image: "https://www.opendoorsacademy.org/wp-content/uploads/2020/10/ODA-Logo.png",
-    website: "https://www.opendoorsacademy.org/"
-  },
-  {
-    name: "Internet Society Foundation",
-    description: "Funds programs that expand internet access and digital education to underserved and rural communities.",
-    image: "https://www.isocfoundation.org/wp-content/uploads/2020/03/ISOC-Foundation-Logo-1.svg",
-    website: "https://www.isocfoundation.org/"
-  },
-  {
-    name: "NextGen America",
-    description: "Empowers young people through civic engagement and access to education, including digital literacy and tech equity initiatives.",
-    image: "https://nextgenamerica.org/wp-content/themes/nextgen/assets/images/logo.svg",
-    website: "https://nextgenamerica.org/"
-  },
-  {
-    name: "The Tech Interactive",
-    description: "A science and technology center offering hands-on education, innovation programs, and outreach for students from underrepresented communities.",
-    image: "https://www.thetech.org/sites/default/files/logo.png",
-    website: "https://www.thetech.org/"
-  },
-  {
-    name: "LAUNCH Code",
-    description: "Offers free coding education and job placement services to help adults from nontraditional backgrounds start careers in tech.",
-    image: "https://www.launchcode.org/static/media/logo.1cc84556.svg",
-    website: "https://www.launchcode.org/"
-  },
-  {
-    name: "Bay Area Video Coalition (BAVC)",
-    description: "Provides low-cost media and tech training, job support, and apprenticeships to help underserved communities thrive in digital industries.",
-    image: "https://bavc.org/wp-content/uploads/2023/01/bavc-logo.png",
-    website: "https://bavc.org/"
-  },
-  {
-    name: "Health Career Connection",
-    description: "Expands diversity in health professions by offering paid internships and career development for college students in underrepresented communities.",
-    image: "https://healthcareers.org/wp-content/uploads/2020/10/HCC_logo_color.png",
-    website: "https://healthcareers.org/"
-  },
-  {
-    name: "Health Leads",
-    description: "Connects low-income patients with essential resources like food, housing, and transportation to improve overall health outcomes.",
-    image: "https://healthleadsusa.org/wp-content/uploads/2022/06/Health-Leads-Logo.png",
-    website: "https://healthleadsusa.org/"
-  },
-  {
-    name: "National Health Foundation",
-    description: "Improves community health by addressing social determinants like education, nutrition, and housing for underserved populations.",
-    image: "https://nationalhealthfoundation.org/wp-content/uploads/2020/01/nhf-logo.svg",
-    website: "https://nationalhealthfoundation.org/"
-  },
-  {
-    name: "Techbridge Girls",
-    description: "Provides STEM education and mentorship to girls from low-income communities to empower their academic and career growth.",
-    image: "https://www.techbridgegirls.org/uploads/1/2/1/3/121346119/tbg-logo_orig.png",
-    website: "https://www.techbridgegirls.org/"
-  },
-  {
-    name: "DevMission",
-    description: "Trains young adults from underserved communities in San Francisco for careers in tech through hands-on learning and job placement.",
-    image: "https://www.devmission.org/uploads/1/0/2/3/102389226/devmissionlogo_orig.png",
-    website: "https://www.devmission.org/"
-  },
-  {
-    name: "MedHaul",
-    description: "A mission-driven tech platform that improves access to transportation for underserved patients needing non-emergency medical care.",
-    image: "https://www.medhaul.com/wp-content/uploads/2021/06/medhaul-logo.png",
-    website: "https://www.medhaul.com/"
-  },
-  {
-    name: "Cyversity",
-    description: "Promotes diversity in cybersecurity by offering training, mentorship, and scholarships for underrepresented populations.",
-    image: "https://www.cyversity.org/wp-content/uploads/2020/12/cyversity-logo.png",
-    website: "https://www.cyversity.org/"
-  },
-  {
-    name: "Built By Girls",
-    description: "Prepares the next generation of female and nonbinary leaders in tech through mentorship and career-readiness programs.",
-    image: "https://www.builtbygirls.com/images/logos/builtbygirls.svg",
-    website: "https://www.builtbygirls.com/"
-  },
+
+
+
+
+
+
+
+{
+  name: "The Epilepsy Foundation",
+  description: "Works to stop seizures and sudden unexpected death in epilepsy (SUDEP), find a cure, and overcome the challenges created by epilepsy.",
+  website: "https://www.epilepsy.com",
+  keywords: ["epilepsy", "seizures", "health", "neurology"]
+},
+{
+  name: "NPower",
+  description: "Provides underserved young adults and military veterans with free IT training, professional certifications, and job placement support to build careers in tech.",
+  image: "https://www.npower.org/wp-content/uploads/2019/10/NPower-logo.png",
+  website: "https://www.npower.org/",
+  keywords: ["IT training", "veterans", "job placement", "technology", "undocumented youth"]
+},
+{
+  name: "Code.org",
+  description: "Expands access to computer science education in K–12 schools, with an emphasis on increasing participation by young women and students from underrepresented groups.",
+  image: "https://code.org/images/social-media/codeorg2021.jpg",
+  website: "https://code.org/",
+  keywords: ["computer science", "education", "K-12", "diversity", "coding"]
+},
+{
+  name: "Girls Who Code",
+  description: "Works to close the gender gap in technology by offering clubs, summer programs, and college-level support for girls interested in coding and computer science.",
+  image: "https://girlswhocode.com/assets/images/gwc-logo.svg",
+  website: "https://girlswhocode.com/",
+  keywords: ["girls", "coding", "technology", "education", "gender gap"]
+},
+{
+  name: "Black Girls Code",
+  description: "Empowers young Black girls by providing workshops and programs in programming, robotics, and game development to cultivate future leaders in tech.",
+  image: "https://www.blackgirlscode.com/uploads/1/2/0/6/120685453/bgc-logo-color_orig.png",
+  website: "https://www.blackgirlscode.com/",
+  keywords: ["Black girls", "coding", "programming", "STEM", "empowerment"]
+},
+{
+  name: "Hack the Hood",
+  description: "Trains low-income youth of color in web development and digital marketing to prepare them for tech careers and entrepreneurship.",
+  image: "https://www.hackthehood.org/uploads/1/2/2/7/122700268/published/ht-logo-png_2.png",
+  website: "https://www.hackthehood.org/",
+  keywords: ["web development", "digital marketing", "youth", "tech careers", "entrepreneurship"]
+},
+{
+  name: "The Hidden Genius Project",
+  description: "Mentors Black male youth in technology creation, entrepreneurship, and leadership to transform their lives and communities.",
+  image: "https://www.hiddengeniusproject.org/wp-content/uploads/2019/10/logo.png",
+  website: "https://www.hiddengeniusproject.org/",
+  keywords: ["Black male youth", "mentorship", "technology", "entrepreneurship", "leadership"]
+},
+{
+  name: "Genesys Works",
+  description: "Connects high school students from underserved communities to paid internships and IT training in professional environments.",
+  image: "https://www.genesysworks.org/wp-content/uploads/2020/01/GW-HorzLogo-RGB.png",
+  website: "https://www.genesysworks.org/",
+  keywords: ["high school", "internships", "IT training", "underserved communities", "career readiness"]
+},
+{
+  name: "TechGirlz",
+  description: "Inspires middle school girls to explore technology through free hands-on workshops and educational resources.",
+  image: "https://www.techgirlz.org/wp-content/uploads/2019/06/TechGirlzLogo-Large-1.png",
+  website: "https://www.techgirlz.org/",
+  keywords: ["middle school", "girls", "technology", "STEM", "workshops"]
+},
+{
+  name: "CodePath.org",
+  description: "Provides college students with free courses in computer science, mentorship, and career support to break into the tech industry.",
+  image: "https://codepath.org/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75",
+  website: "https://codepath.org/",
+  keywords: ["college students", "computer science", "mentorship", "career support", "tech industry"]
+},
+{
+  name: "American Telemedicine Association",
+  description: "Promotes the use of advanced telehealth technologies to improve access to quality healthcare services.",
+  image: "https://www.americantelemed.org/wp-content/uploads/2020/05/ATA_logo_transparent.png",
+  website: "https://www.americantelemed.org/",
+  keywords: ["telemedicine", "healthcare", "technology", "access", "telehealth"]
+},
+{
+  name: "Per Scholas",
+  description: "Offers free, rigorous IT job training to individuals in underserved communities, helping them launch successful careers in technology.",
+  image: "https://perscholas.org/wp-content/themes/perscholas/assets/images/logo.png",
+  website: "https://www.perscholas.org/",
+  keywords: ["IT training", "job readiness", "underserved communities", "technology careers"]
+},
+{
+  name: "All Star Code",
+  description: "Prepares young men of color for careers in tech by providing mentorship, industry exposure, and intensive coding training.",
+  image: "https://allstarcode.org/wp-content/uploads/2021/05/logo.png",
+  website: "https://allstarcode.org/",
+  keywords: ["young men of color", "mentorship", "coding", "tech careers", "industry exposure"]
+},
+{
+  name: "Digital NEST",
+  description: "Provides youth in underserved rural communities with access to technology, mentorship, and skills to pursue tech careers.",
+  image: "https://digitalnest.org/wp-content/uploads/2020/10/digital-nest-logo.svg",
+  website: "https://digitalnest.org/",
+  keywords: ["youth", "rural communities", "technology access", "mentorship", "tech careers"]
+},
+{
+  name: "Resilient Coders",
+  description: "Teaches young people from underserved communities how to code and supports them into high-growth tech jobs.",
+  image: "https://resilientcoders.org/images/logo-black.png",
+  website: "https://resilientcoders.org/",
+  keywords: ["coding", "underserved communities", "tech jobs", "youth training"]
+},
+{
+  name: "CareerFoundry Scholarships",
+  description: "Provides scholarships and bootcamp programs to help diverse and low-income students transition into tech careers.",
+  image: "https://careerfoundry.com/assets/logos/logo-black.svg",
+  website: "https://careerfoundry.com/",
+  keywords: ["scholarships", "bootcamp", "diversity", "low-income students", "tech careers"]
+},
+{
+  name: "StackUp",
+  description: "Supports veterans and active duty military through gaming-based mental health programs and tech industry exposure.",
+  image: "https://stackup.org/wp-content/uploads/2020/11/stack-up-logo-red.png",
+  website: "https://stackup.org/",
+  keywords: ["veterans", "military", "mental health", "gaming", "tech exposure"]
+},
+{
+  name: "OpenDoors Academy",
+  description: "Supports middle and high school students in under-resourced communities through education and career readiness programs, including tech skills.",
+  image: "https://www.opendoorsacademy.org/wp-content/uploads/2020/10/ODA-Logo.png",
+  website: "https://www.opendoorsacademy.org/",
+  keywords: ["middle school", "high school", "education", "career readiness", "tech skills"]
+},
+{
+  name: "Internet Society Foundation",
+  description: "Funds programs that expand internet access and digital education to underserved and rural communities.",
+  image: "https://www.isocfoundation.org/wp-content/uploads/2020/03/ISOC-Foundation-Logo-1.svg",
+  website: "https://www.isocfoundation.org/",
+  keywords: ["internet access", "digital education", "underserved", "rural communities"]
+},
+{
+  name: "NextGen America",
+  description: "Empowers young people through civic engagement and access to education, including digital literacy and tech equity initiatives.",
+  image: "https://nextgenamerica.org/wp-content/themes/nextgen/assets/images/logo.svg",
+  website: "https://nextgenamerica.org/",
+  keywords: ["youth empowerment", "civic engagement", "education", "digital literacy", "tech equity"]
+},
+{
+  name: "The Tech Interactive",
+  description: "A science and technology center offering hands-on education, innovation programs, and outreach for students from underrepresented communities.",
+  image: "https://www.thetech.org/sites/default/files/logo.png",
+  website: "https://www.thetech.org/",
+  keywords: ["science education", "technology", "hands-on learning", "underrepresented students"]
+},
+{
+  name: "LAUNCH Code",
+  description: "Offers free coding education and job placement services to help adults from nontraditional backgrounds start careers in tech.",
+  image: "https://www.launchcode.org/static/media/logo.1cc84556.svg",
+  website: "https://www.launchcode.org/",
+  keywords: ["coding education", "job placement", "adults", "nontraditional backgrounds", "tech careers"]
+},
+{
+  name: "Bay Area Video Coalition (BAVC)",
+  description: "Provides low-cost media and tech training, job support, and apprenticeships to help underserved communities thrive in digital industries.",
+  image: "https://bavc.org/wp-content/uploads/2023/01/bavc-logo.png",
+  website: "https://bavc.org/",
+  keywords: ["media training", "tech training", "job support", "apprenticeships", "underserved communities"]
+},
+{
+  name: "Health Career Connection",
+  description: "Expands diversity in health professions by offering paid internships and career development for college students in underrepresented communities.",
+  image: "https://healthcareers.org/wp-content/uploads/2020/10/HCC_logo_color.png",
+  website: "https://healthcareers.org/",
+  keywords: ["health professions", "diversity", "paid internships", "career development", "college students"]
+},
+{
+  name: "Health Leads",
+  description: "Connects low-income patients with essential resources like food, housing, and transportation to improve overall health outcomes.",
+  image: "https://healthleadsusa.org/wp-content/uploads/2022/06/Health-Leads-Logo.png",
+  website: "https://healthleadsusa.org/",
+  keywords: ["low-income patients", "resources", "health outcomes", "food", "housing", "transportation"]
+},
+{
+  name: "National Health Foundation",
+  description: "Improves community health by addressing social determinants like education, nutrition, and housing for underserved populations.",
+  image: "https://nationalhealthfoundation.org/wp-content/uploads/2020/01/nhf-logo.svg",
+  website: "https://nationalhealthfoundation.org/",
+  keywords: ["community health", "social determinants", "education", "nutrition", "housing", "underserved"]
+},
+{
+  name: "Techbridge Girls",
+  description: "Provides STEM education and mentorship to girls from low-income communities to empower their academic and career growth.",
+  image: "https://www.techbridgegirls.org/uploads/1/2/1/3/121346119/tbg-logo_orig.png",
+  website: "https://www.techbridgegirls.org/",
+  keywords: ["STEM education", "mentorship", "girls", "low-income", "empowerment"]
+},
+{
+  name: "DevMission",
+  description: "Trains young adults from underserved communities in San Francisco for careers in tech through hands-on learning and job placement.",
+  image: "https://www.devmission.org/uploads/1/0/2/3/102389226/devmissionlogo_orig.png",
+  website: "https://www.devmission.org/",
+  keywords: ["young adults", "underserved communities", "San Francisco", "tech training", "job placement"]
+},
+{
+  name: "MedHaul",
+  description: "A mission-driven tech platform that improves access to transportation for underserved patients needing non-emergency medical care.",
+  image: "https://www.medhaul.com/wp-content/uploads/2021/06/medhaul-logo.png",
+  website: "https://www.medhaul.com/",
+  keywords: ["transportation", "healthcare", "underserved patients", "non-emergency medical care", "technology"]
+},
+{
+  name: "Cyversity",
+  description: "Promotes diversity in cybersecurity by offering training, mentorship, and scholarships for underrepresented populations.",
+  image: "https://www.cyversity.org/wp-content/uploads/2020/12/cyversity-logo.png",
+  website: "https://www.cyversity.org/",
+  keywords: ["cybersecurity", "diversity", "training", "mentorship", "scholarships"]
+},
+{
+  name: "Built By Girls",
+  description: "Prepares the next generation of female and nonbinary leaders in tech through mentorship and career-readiness programs.",
+  image: "https://www.builtbygirls.com/images/logos/builtbygirls.svg",
+  website: "https://www.builtbygirls.com/",
+  keywords: ["female leaders", "nonbinary", "mentorship", "career readiness", "technology"]
+},
    {
     name: "Direct Relief",
     description: "Provides medical assistance to improve the health and lives of people affected by poverty and emergencies.",
@@ -5051,4 +5095,4 @@ const charities = [
     keywords: ["children", "hunger", "America"],
     website: "https://www.nokidhungry.org"
   },
-
+];
