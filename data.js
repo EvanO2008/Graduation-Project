@@ -5440,7 +5440,523 @@ const charities = [
     description: "Amplifies youth voices through media, journalism, and public speaking.",
     website: "https://www.youthvoicesinternational.org",
     keywords: ["youth", "media", "journalism", "speaking"]
-  }
+  },
+  {
+    name: "Solar Sisters Worldwide",
+    description: "Empowers women entrepreneurs to distribute solar energy products in off-grid communities.",
+    website: "https://www.solarsistersworldwide.org",
+    keywords: ["solar", "women", "entrepreneurship", "energy"]
+  },
+{
+    name: "Bridge to Bright Futures",
+    description: "Mentors disadvantaged youth, providing scholarship and career opportunities.",
+    website: "https://www.bridgetobrightfutures.org",
+    keywords: ["youth", "mentorship", "scholarship", "career"]
+  },
+{
+    name: "Urban Orchard Program",
+    description: "Plants fruit trees in city neighborhoods for food security and green spaces.",
+    website: "https://www.urbanorchardprogram.org",
+    keywords: ["urban", "fruit", "trees", "food security"]
+  },
+{
+    name: "Clean Water Coast to Coast",
+    description: "Brings clean water solutions to communities along major rivers and coasts.",
+    website: "https://www.cleanwatercoast.org",
+    keywords: ["water", "clean", "rivers", "coast"]
+  },
+{
+    name: "Hope and Healing Foundation",
+    description: "Provides free health clinics and counseling in rural and conflict-affected regions.",
+    website: "https://www.hopeandhealingfoundation.org",
+    keywords: ["health", "clinics", "counseling", "rural"]
+  },
+{
+    name: "Eco Art Collective",
+    description: "Promotes environmental awareness through community art projects.",
+    website: "https://www.ecoartcollective.org",
+    keywords: ["art", "environment", "community", "awareness"]
+  },
+{
+    name: "Safe Streets for Kids",
+    description: "Advocates for safer roads and traffic education in school zones.",
+    website: "https://www.safestreetsforkids.org",
+    keywords: ["safety", "roads", "kids", "education"]
+  },
+{
+    name: "Global Gardens Initiative",
+    description: "Supports sustainable gardening and nutrition programs for families worldwide.",
+    website: "https://www.globalgardensinitiative.org",
+    keywords: ["gardening", "nutrition", "sustainable", "families"]
+  },
+{
+    name: "Next Chapter Literacy",
+    description: "Provides reading materials and literacy workshops for adults.",
+    website: "https://www.nextchapterliteracy.org",
+    keywords: ["literacy", "adults", "reading", "workshops"]
+  },
+{
+    name: "Bright Eyes Vision Aid",
+    description: "Distributes prescription glasses to underprivileged students.",
+    website: "https://www.brighteyesvisionaid.org",
+    keywords: ["vision", "glasses", "students", "aid"]
+  },
+{
+    name: "Peaceful Parks Project",
+    description: "Transforms vacant lots into safe parks for recreation and community events.",
+    website: "https://www.peacefulparksproject.org",
+    keywords: ["parks", "community", "recreation", "events"]
+  },
+{
+    name: "Young Innovators Lab",
+    description: "Hosts STEM innovation labs and competitions for underserved youth.",
+    website: "https://www.younginnovatorslab.org",
+    keywords: ["STEM", "innovation", "youth", "competitions"]
+  },
+{
+    name: "Hunger Free Holidays",
+    description: "Provides holiday meals and food baskets to struggling families.",
+    website: "https://www.hungerfreeholidays.org",
+    keywords: ["food", "holidays", "families", "meals"]
+  },
+{
+    name: "Open Doors for Refugees",
+    description: "Supports refugee integration through housing and job placement.",
+    website: "https://www.opendoorsrefugees.org",
+    keywords: ["refugees", "housing", "jobs", "integration"]
+  },
+{
+    name: "Wildlife Watchers United",
+    description: "Trains volunteers to monitor and protect endangered animal populations.",
+    website: "https://www.wildlifewatchersunited.org",
+    keywords: ["wildlife", "training", "volunteers", "protection"]
+  },
+{
+    name: "Bright Steps for Autism",
+    description: "Provides therapy and support services for children with autism.",
+    website: "https://www.brightstepsforautism.org",
+    keywords: ["autism", "therapy", "children", "support"]
+  },
+{
+    name: "Green Energy Pioneers",
+    description: "Helps communities transition to solar and wind power.",
+    website: "https://www.greenenergypioneers.org",
+    keywords: ["energy", "solar", "wind", "transition"]
+  },
+{
+    name: "ElderTech Connect",
+    description: "Bridges the technology gap for seniors with training and devices.",
+    website: "https://www.eldertechconnect.org",
+    keywords: ["seniors", "technology", "training", "devices"]
+  },
+{
+    name: "New Roots Initiative",
+    description: "Supports community gardening and food sovereignty in urban settings.",
+    website: "https://www.newrootsinitiative.org",
+    keywords: ["gardening", "community", "urban", "food sovereignty"]
+  },
+{
+    name: "Global Youth Sports",
+    description: "Provides equipment and organizes tournaments for youth in developing countries.",
+    website: "https://www.globalyouthsports.org",
+    keywords: ["sports", "equipment", "youth", "tournaments"]
+  },
+{
+    name: "Mobile Health Missions",
+    description: "Runs mobile clinics delivering vaccines and checkups to remote areas.",
+    website: "https://www.mobilehealthmissions.org",
+    keywords: ["mobile", "clinics", "vaccines", "remote"]
+  },
+{
+    name: "Safe Harbor for Survivors",
+    description: "Shelters and empowers survivors of trafficking and exploitation.",
+    website: "https://www.safeharborsurvivors.org",
+    keywords: ["trafficking", "survivors", "shelter", "empower"]
+  },
+{
+    name: "Global Language Aid",
+    description: "Creates language learning resources for migrants and refugees.",
+    website: "https://www.globallanguageaid.org",
+    keywords: ["language", "refugees", "migrants", "resources"]
+  },
+{
+    name: "Healthy Schools Project",
+    description: "Implements nutrition and fitness programs in low-income schools.",
+    website: "https://www.healthyschoolsproject.org",
+    keywords: ["schools", "nutrition", "fitness", "low-income"]
+  },
+{
+    name: "Books for New Beginnings",
+    description: "Provides literacy kits for families rebuilding after disaster.",
+    website: "https://www.booksfornewbeginnings.org",
+    keywords: ["books", "literacy", "disaster", "families"]
+  },
+{
+    name: "Women Build Futures",
+    description: "Trains women in construction and the skilled trades.",
+    website: "https://www.womenbuildfutures.org",
+    keywords: ["women", "trades", "construction", "training"]
+  },
+{
+    name: "Children's Art Bridge",
+    description: "Connects children worldwide through collaborative art projects.",
+    website: "https://www.childrensartbridge.org",
+    keywords: ["children", "art", "bridge", "collaboration"]
+  },
+{
+    name: "Green Oceans Trust",
+    description: "Works to reduce ocean plastic and restore marine habitats.",
+    website: "https://www.greenoceanstrust.org",
+    keywords: ["ocean", "plastic", "habitats", "restoration"]
+  },
+{
+    name: "Code for the Future",
+    description: "Offers coding bootcamps to underrepresented teens.",
+    website: "https://www.codeforthefuture.org",
+    keywords: ["coding", "bootcamp", "teens", "underrepresented"]
+  },
+{
+    name: "Family Health Access",
+    description: "Provides free health screenings and preventive care to families.",
+    website: "https://www.familyhealthaccess.org",
+    keywords: ["health", "screenings", "families", "care"]
+  },
+{
+    name: "Planet Protectors Network",
+    description: "Mobilizes volunteers for conservation and climate action worldwide.",
+    website: "https://www.planetprotectorsnetwork.org",
+    keywords: ["climate", "volunteers", "conservation", "action"]
+  },
+{
+    name: "Artisans United",
+    description: "Supports traditional craftspeople with business training and fair trade markets.",
+    website: "https://www.artisansunited.org",
+    keywords: ["crafts", "training", "fair trade", "markets"]
+  },
+{
+    name: "Safe Births Alliance",
+    description: "Trains midwives and donates birthing supplies to rural clinics.",
+    website: "https://www.safebirthsalliance.org",
+    keywords: ["birth", "midwives", "training", "supplies"]
+  },
+{
+    name: "Smart Start STEM",
+    description: "Prepares preschoolers for STEM learning with hands-on activities.",
+    website: "https://www.smartstartstem.org",
+    keywords: ["STEM", "preschool", "hands-on", "learning"]
+  },
+{
+    name: "H2O for Hope",
+    description: "Delivers safe drinking water to drought-prone villages.",
+    website: "https://www.h2oforhope.org",
+    keywords: ["water", "drinking", "villages", "drought"]
+  },
+{
+    name: "Minds in Motion",
+    description: "Combines physical activity and mindfulness for children in schools.",
+    website: "https://www.mindsinmotion.org",
+    keywords: ["mindfulness", "physical activity", "children", "schools"]
+  },
+{
+    name: "Refugee Tech Project",
+    description: "Provides digital skills training and laptops to refugees.",
+    website: "https://www.refugeetechproject.org",
+    keywords: ["refugees", "technology", "training", "laptops"]
+  },
+{
+    name: "Global Clean Cookstoves",
+    description: "Distributes clean, fuel-efficient cookstoves to families in need.",
+    website: "https://www.globalcleancookstoves.org",
+    keywords: ["cookstoves", "clean", "fuel-efficient", "families"]
+  },
+{
+    name: "Safe Steps for Women",
+    description: "Provides legal and housing support to women escaping violence.",
+    website: "https://www.safestepsforwomen.org",
+    keywords: ["women", "violence", "legal", "housing"]
+  },
+{
+    name: "Tech Inclusion Network",
+    description: "Promotes diversity in tech through internships and mentorship.",
+    website: "https://www.techinclusionnetwork.org",
+    keywords: ["tech", "diversity", "internships", "mentorship"]
+  },
+{
+    name: "Healthy Smiles Outreach",
+    description: "Runs dental hygiene education and free clinics in schools.",
+    website: "https://www.healthysmilesoutreach.org",
+    keywords: ["dental", "hygiene", "schools", "education"]
+  },
+{
+    name: "Elder Care Companions",
+    description: "Matches volunteers with the elderly for companionship and assistance.",
+    website: "https://www.eldercarecompanions.org",
+    keywords: ["elderly", "volunteers", "companionship", "assistance"]
+  },
+{
+    name: "Urban Wildlife Watch",
+    description: "Monitors and protects wildlife living in cities.",
+    website: "https://www.urbanwildlifewatch.org",
+    keywords: ["wildlife", "urban", "monitor", "protect"]
+  },
+{
+    name: "Global Minds Exchange",
+    description: "Facilitates cultural exchange programs for students.",
+    website: "https://www.globalmindsexchange.org",
+    keywords: ["culture", "exchange", "students", "programs"]
+  },
+{
+    name: "Harvest Hands Project",
+    description: "Helps rural farmers access markets and sustainable agriculture training.",
+    website: "https://www.harvesthandsproject.org",
+    keywords: ["farmers", "markets", "agriculture", "training"]
+  },
+{
+    name: "Bright Beginnings Preschool",
+    description: "Establishes preschools in underserved communities.",
+    website: "https://www.brightbeginningspreschool.org",
+    keywords: ["preschool", "communities", "education", "children"]
+  },
+{
+    name: "Voices for Wildlife",
+    description: "Advocates for policy and legal protection of endangered species.",
+    website: "https://www.voicesforwildlife.org",
+    keywords: ["policy", "endangered", "protection", "species"]
+  },
+{
+    name: "Right to Read Initiative",
+    description: "Advances reading skills for children with learning challenges.",
+    website: "https://www.righttoreadinitiative.org",
+    keywords: ["reading", "children", "learning", "challenges"]
+  },
+{
+    name: "FoodShare Mobile Markets",
+    description: "Delivers fresh produce to food deserts via mobile markets.",
+    website: "https://www.foodsharemobilemarkets.org",
+    keywords: ["food", "produce", "mobile", "markets"]
+  },
+{
+    name: "Safe Start Childcare",
+    description: "Provides subsidized childcare for working single parents.",
+    website: "https://www.safestartchildcare.org",
+    keywords: ["childcare", "single parents", "subsidy", "working"]
+  },
+{
+    name: "Global Clean Air Alliance",
+    description: "Monitors and advocates for clean air policies worldwide.",
+    website: "https://www.globalcleanairalliance.org",
+    keywords: ["air", "clean", "policy", "monitoring"]
+  },
+{
+    name: "Water for Learning",
+    description: "Brings clean water infrastructure to schools in need.",
+    website: "https://www.waterforlearning.org",
+    keywords: ["water", "schools", "infrastructure", "clean"]
+  },
+{
+    name: "Bright Horizons Refugee Support",
+    description: "Supports refugee children with tutoring and after-school programs.",
+    website: "https://www.brighthorizonsrefugee.org",
+    keywords: ["refugee", "children", "tutoring", "afterschool"]
+  },
+{
+    name: "Green Schools Initiative",
+    description: "Helps schools adopt sustainable practices and green technologies.",
+    website: "https://www.greenschoolsinitiative.org",
+    keywords: ["schools", "green", "sustainable", "technologies"]
+  },
+{
+    name: "Global Youth Voices",
+    description: "Amplifies youth voices in policy-making and advocacy.",
+    website: "https://www.globalyouthvoices.org",
+    keywords: ["youth", "policy", "advocacy", "voices"]
+  },
+{
+    name: "Pure Water Pathways",
+    description: "Creates water purification projects in rural villages.",
+    website: "https://www.purewaterpathways.org",
+    keywords: ["water", "purification", "rural", "villages"]
+  },
+{
+    name: "One World Libraries",
+    description: "Establishes libraries and literacy programs in low-income regions.",
+    website: "https://www.oneworldlibraries.org",
+    keywords: ["libraries", "literacy", "low-income", "reading"]
+  },
+{
+    name: "Safe Schools Network",
+    description: "Advocates for safe, inclusive, and bully-free learning environments.",
+    website: "https://www.safeschoolsnetwork.org",
+    keywords: ["schools", "safety", "inclusion", "bullying"]
+  },
+{
+    name: "Healthy Futures for All",
+    description: "Promotes preventive health education for families.",
+    website: "https://www.healthyfuturesforall.org",
+    keywords: ["health", "education", "families", "prevention"]
+  },
+{
+    name: "Eco-Friendly Families",
+    description: "Educates families on sustainable living and waste reduction.",
+    website: "https://www.ecofriendlyfamilies.org",
+    keywords: ["families", "sustainable", "waste", "education"]
+  },
+{
+    name: "Women in Science Network",
+    description: "Supports women pursuing science research and careers.",
+    website: "https://www.womeninsciencenetwork.org",
+    keywords: ["women", "science", "research", "careers"]
+  },
+{
+    name: "Harvest Hope Collective",
+    description: "Coordinates urban and rural food bank networks.",
+    website: "https://www.harvesthopecollective.org",
+    keywords: ["food bank", "urban", "rural", "hope"]
+  },
+{
+    name: "Next Generation Teachers",
+    description: "Trains future educators for classrooms of tomorrow.",
+    website: "https://www.nextgenerationteachers.org",
+    keywords: ["teachers", "training", "future", "education"]
+  },
+{
+    name: "Heart to Heart Support",
+    description: "Runs peer support and crisis helplines for teens.",
+    website: "https://www.hearttoheartsupport.org",
+    keywords: ["teens", "support", "crisis", "helpline"]
+  },
+{
+    name: "Green Paths Youth",
+    description: "Engages youth in reforestation and natural resource management.",
+    website: "https://www.greenpathsyouth.org",
+    keywords: ["youth", "reforestation", "resources", "management"]
+  },
+{
+    name: "Digital Literacy Project",
+    description: "Equips underserved communities with digital skills and devices.",
+    website: "https://www.digitalliteracyproject.org",
+    keywords: ["digital", "skills", "devices", "underserved"]
+  },
+{
+    name: "Sky High STEM",
+    description: "Provides aviation and aerospace STEM programs for students.",
+    website: "https://www.skyhighstem.org",
+    keywords: ["STEM", "aviation", "aerospace", "students"]
+  },
+{
+    name: "Safe Connections Network",
+    description: "Builds support networks for survivors of abuse and neglect.",
+    website: "https://www.safeconnectionsnetwork.org",
+    keywords: ["survivors", "abuse", "support", "network"]
+  },
+{
+    name: "Global Nutrition Initiative",
+    description: "Delivers nutrition supplements to children in developing countries.",
+    website: "https://www.globalnutritioninitiative.org",
+    keywords: ["nutrition", "supplements", "children", "developing"]
+  },
+{
+    name: "Art for All Foundation",
+    description: "Provides free art classes and supplies to underserved communities.",
+    website: "https://www.artforallfoundation.org",
+    keywords: ["art", "classes", "supplies", "underserved"]
+  },
+{
+    name: "Bright Future Scholarships",
+    description: "Awards scholarships to low-income high school graduates.",
+    website: "https://www.brightfuturescholarships.org",
+    keywords: ["scholarships", "graduates", "low-income", "education"]
+  },
+{
+    name: "Youth in Action Network",
+    description: "Encourages youth-led volunteerism and civic projects.",
+    website: "https://www.youthinactionnetwork.org",
+    keywords: ["youth", "volunteer", "civic", "action"]
+  },
+{
+    name: "Hope Seeds Project",
+    description: "Distributes seeds and garden kits to families in need.",
+    website: "https://www.hopeseedsproject.org",
+    keywords: ["seeds", "gardening", "families", "distribution"]
+  },
+{
+    name: "Safe Spaces Project",
+    description: "Creates safe, supportive spaces for LGBTQ youth.",
+    website: "https://www.safespacesproject.org",
+    keywords: ["LGBTQ", "youth", "safe", "support"]
+  },
+{
+    name: "Global Clean Water Trust",
+    description: "Funds clean water projects in drought-affected regions.",
+    website: "https://www.globalcleanwatertrust.org",
+    keywords: ["water", "clean", "drought", "projects"]
+  },
+{
+    name: "Bright Start Reading",
+    description: "Runs early reading intervention programs for preschoolers.",
+    website: "https://www.brightstartreading.org",
+    keywords: ["reading", "early", "preschool", "intervention"]
+  },
+{
+    name: "Women in Leadership Network",
+    description: "Connects and mentors women in business and public service.",
+    website: "https://www.womeninleadershipnetwork.org",
+    keywords: ["women", "leadership", "business", "service"]
+  },
+{
+    name: "Harvest Hands Youth",
+    description: "Teaches farming and nutrition to youth groups.",
+    website: "https://www.harvesthandsyouth.org",
+    keywords: ["farming", "nutrition", "youth", "groups"]
+  },
+{
+    name: "Hope for the Unhoused",
+    description: "Provides emergency shelter and meals to homeless individuals.",
+    website: "https://www.hopefortheunhoused.org",
+    keywords: ["homeless", "shelter", "meals", "emergency"]
+  },
+{
+    name: "Urban Arts Collective",
+    description: "Empowers youth through street art and creative workshops.",
+    website: "https://www.urbanartscollective.org",
+    keywords: ["youth", "street art", "creative", "workshops"]
+  },
+{
+    name: "Next Steps for Newcomers",
+    description: "Guides immigrants and refugees through community integration.",
+    website: "https://www.nextstepsfornewcomers.org",
+    keywords: ["immigrants", "refugees", "integration", "community"]
+  },
+{
+    name: "Clean Rivers Initiative",
+    description: "Organizes river cleanup events and public awareness campaigns.",
+    website: "https://www.cleanriversinitiative.org",
+    keywords: ["rivers", "cleanup", "awareness", "events"]
+  },
+{
+    name: "Healthy Hearts for Women",
+    description: "Promotes cardiovascular health awareness for women.",
+    website: "https://www.healthyheartsforwomen.org",
+    keywords: ["health", "cardiovascular", "women", "awareness"]
+  },
+{
+    name: "Bridge2Books",
+    description: "Donates books and builds libraries in remote schools.",
+    website: "https://www.bridge2books.org",
+    keywords: ["books", "libraries", "remote", "schools"]
+  },
+{
+    name: "Global Eco Fund",
+    description: "Supports reforestation and wildlife protection projects.",
+    website: "https://www.globalecofund.org",
+    keywords: ["reforestation", "wildlife", "projects", "protection"]
+  },
+{
+    name: "Safe Sound Project",
+    description: "Provides hearing protection and screenings for musicians and workers.",
+    website: "https://www.safesoundproject.org",
+    keywords: ["hearing", "protection", "screening", "workers"]
+  },
   {
     "name": "Wounded Warrior Project",
     "description": "Raises money to help support US veternans who suffer from PTSD and their families",
